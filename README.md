@@ -1,6 +1,6 @@
 <!-- Banner de ciberseguridad -->
 <p align="center">
-  <img src="ciberseguridad.jpg" alt="Enrique Forte - Ciberseguridad" width="100%" />
+  <img src="ok-ciber.png" alt="Enrique Forte - Ciberseguridad" width="100%" />
 </p>
 
 # 👋 ¡Hola! Soy Enrique Forte  
