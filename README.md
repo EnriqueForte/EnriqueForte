@@ -35,6 +35,13 @@
 
 ---
 
+---
+
+### 🛡️ Mis estadísticas en TryHackMe
+[![TryHackMe Stats](https://tryhackme-badges.s3.amazonaws.com/whoisKiK3.png)](https://tryhackme.com/p/5368397)
+
+---
+
 ## 📊 Estadísticas de GitHub
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=EnriqueForte&show_icons=true&theme=radical" height="150" />
