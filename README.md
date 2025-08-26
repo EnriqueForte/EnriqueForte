@@ -5,8 +5,8 @@
 
 # 👋 ¡Hola! Soy Enrique Forte  
 
-💻 **QA & Software Developer | Estudiante DAM especializado en Java, SQL y Desarrollo de Software**  
-🔐 **Aspirante a Ciberseguridad | Pentesting | TryHackMe Enthusiast**
+💻 **Estudiante DAM especializado en Java, Python, SQL y Desarrollo de Software**  
+🔐 **Aspirante a Ciberseguridad | Pentesting | Analista| TryHackMe Enthusiast**
 
 ---
 
@@ -14,8 +14,8 @@
 - 🌍 Desde Zaragoza, España.  
 - 🎓 En proceso de especialización en **Ciberseguridad**.  
 - 🛡️ Experiencia práctica con **TryHackMe** → rutas, máquinas y retos de pentesting.  
-- 📈 Interesado en crecer en áreas de **Red Team, Blue Team, QA Testing y Seguridad Ofensiva/Defensiva**. 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/enriqueforte/)  
+- 📈 Interesado en crecer en áreas de **Red Team, Blue Team y Seguridad Ofensiva/Defensiva**. 
+- 🔗 [LinkedIn](https://www.linkedin.com/in/enriqueforte/)
 
 ---
 
