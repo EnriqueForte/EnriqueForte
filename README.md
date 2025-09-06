@@ -85,12 +85,12 @@ Actualmente estoy practicando y resolviendo CTFs en plataformas como **TryHackMe
 Próximamente iré subiendo mis **writeups** organizados.
 
 ### 🔹 Progreso
+- Hammer – TryHackMe (CTFs/Hammer)
 - Mr. Robot – TryHackMe *(writeup en preparación)*  
 - Basic Pentesting – TryHackMe *(writeup en preparación)*  
 - OhSINT – TryHackMe *(writeup en preparación)*  
 - Pickle Rick – TryHackMe *(writeup en preparación)*
 - Bounty Hacker – TryHackMe *(writeup en preparación)*
-- Hammer – TryHackMe *(writeup en preparación)*
 - Vulnerability Capstone – TryHackMe *(writeup en preparación)*
 - RootMe – TryHackMe *(writeup en preparación)*
 – Net Sec Challenge TryHackMe *(writeup en preparación)*
