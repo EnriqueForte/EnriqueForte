@@ -93,7 +93,7 @@ Próximamente iré subiendo mis **writeups** organizados.
 - Bounty Hacker – TryHackMe *(writeup en preparación)*
 - Vulnerability Capstone – TryHackMe *(writeup en preparación)*
 - RootMe – TryHackMe *(writeup en preparación)*
-– Net Sec Challenge - TryHackMe *(writeup en preparación)*
+- Net Sec Challenge - TryHackMe *(writeup en preparación)*
 - Psycho – DockerLabs *(writeup en preparación)*
 - 🔜 Más CTFs en camino... 🚀 
 
