@@ -1,8 +1,5 @@
-<img src="ciberseguridad.jpg" alt="Mi foto de perfil" width="250">
+<img src="ciberseguridad.jpg" alt="Mi foto de perfil">
 
-<p align="center">
-  <img src="ok-ciber.png" alt="Enrique Forte - Ciberseguridad" width="100%" />
-</p>
 
 # 👋 ¡Hola! Soy Enrique Forte  
 
