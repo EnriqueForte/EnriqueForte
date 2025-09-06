@@ -17,18 +17,38 @@
 ---
 
 ## 🛠️ Tecnologías y herramientas
+## 🛠️ Tecnologías y herramientas
 <p align="left">
+  
+  <!-- Sistemas -->
   <img src="https://img.shields.io/badge/Linux-333?logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white" />
+  
+  <!-- Pentesting -->
   <img src="https://img.shields.io/badge/TryHackMe-212121?logo=tryhackme&logoColor=red" />
+  <img src="https://img.shields.io/badge/HackTheBox-9FEF00?logo=hackthebox&logoColor=black" />
   <img src="https://img.shields.io/badge/Burp%20Suite-FF6F00?logo=burpsuite&logoColor=white" />
   <img src="https://img.shields.io/badge/Metasploit-3A6EA5?logo=metasploit&logoColor=white" />
   <img src="https://img.shields.io/badge/Nmap-00457C?logo=nmap&logoColor=white" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white" />
+
+  <!-- Desarrollo -->
   <img src="https://img.shields.io/badge/SQL-003B57?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?logo=sqlite&logoColor=white" />
   <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
+
+  <!-- DevOps -->
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white" />
 </p>
+
 
 ---
 
