@@ -55,11 +55,11 @@
 ## 🎯 Logros y proyectos
 - ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
 - ✅ Desarrollo de aplicaciones como:
-  - ✈️ [**Gestión de Vuelos y Pasajeros**](README.md)
-  - 🌦️ [**Aplicación Meteorológica**](Proyectos/AppMeteorologica/README.md) 
-  - 🛠️ [**Servicio de revisión de código**](Proyectos/ServicioRevisionCodigo/README.md)
-  - 🌍 [**Emisiones CO₂**](Proyectos/EmisionesCO2/README.md)
-  - 🔗 [**URL Shortener**](Proyectos/UrlShortener/README.md)
+  - ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
+  - 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app) 
+  - 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
+  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/EmisionesCO2)
+  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte//UrlShortener)
 
 ---
 
