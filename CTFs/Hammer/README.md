@@ -13,13 +13,17 @@ Se centra en técnicas de **enumeración web, explotación de vulnerabilidades y
 ---
 
 ## 🛠️ Herramientas utilizadas
-- `nmap` – Escaneo de puertos y servicios  
-- `gobuster` / `dirsearch` – Descubrimiento de directorios  
-- `nikto` – Detección de vulnerabilidades web  
-- `hydra` – Ataques de fuerza bruta  
-- `Burp Suite` – Análisis e inyección en aplicaciones web  
-- `john` / `hashcat` – Cracking de contraseñas  
-- `linpeas.sh` – Escalada de privilegios  
+
+Durante la resolución de este CTF utilicé las siguientes herramientas y recursos:
+
+- **Ping** → para verificar la conectividad inicial con la máquina objetivo.  
+- **Nmap** → escaneo de todos los puertos y detección de servicios/versiones.  
+- **Gobuster / FFuF** → enumeración de directorios y rutas ocultas con el patrón `hmr_`.  
+- **Burp Suite** → interceptar y modificar peticiones HTTP (login, reset de contraseña, RCE).   
+- **Python (scripts personalizados)** → para automatizar la fuerza bruta del código de recuperación y la generación de un JWT válido con rol `admin`.  
+- **JWT.io** → decodificación y análisis del token JWT expuesto.  
+- **LinPEAS / GTFOBins** → identificación de binarios y técnicas para la escalada de privilegios.  
+- **Netcat (nc)** → para intentar obtener una reverse shell y mantener acceso remoto.
 
 ---
 
