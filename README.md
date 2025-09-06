@@ -1,6 +1,5 @@
 <img src="ciberseguridad.jpg" alt="Mi foto de perfil">
 
-
 # 👋 ¡Hola! Soy Enrique Forte  
 
 💻 **Estudiante DAM especializado en Java, Python, SQL y Desarrollo de Software**  
