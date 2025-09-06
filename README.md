@@ -81,21 +81,17 @@
 
 ## 🕵️ CTFs resueltos
 
-Actualmente estoy practicando y resolviendo CTFs en plataformas como **TryHackMe** / **DockerLabs**.  
-Próximamente iré subiendo mis **writeups** organizados.
+Aquí encontrarás mis writeups de CTFs en plataformas como **TryHackMe** y **DockerLabs**.
 
-### 🔹 Progreso
-- [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md)
-- Mr. Robot – TryHackMe *(writeup en preparación)*  
-- Basic Pentesting – TryHackMe *(writeup en preparación)*  
-- OhSINT – TryHackMe *(writeup en preparación)*  
-- Pickle Rick – TryHackMe *(writeup en preparación)*
-- Bounty Hacker – TryHackMe *(writeup en preparación)*
-- Vulnerability Capstone – TryHackMe *(writeup en preparación)*
-- RootMe – TryHackMe *(writeup en preparación)*
-- Net Sec Challenge - TryHackMe *(writeup en preparación)*
-- Psycho – DockerLabs *(writeup en preparación)*
-- 🔜 Más CTFs en camino... 🚀 
+- [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) ✅
+- [🤖 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md) *(en preparación)*
+- [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md) *(en preparación)*
+- [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) *(en preparación)*
+- [🥒 Pickle Rick – TryHackMe](./CTFs/PickleRick/README.md) *(en preparación)*
+- [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/BountyHacker/README.md) *(en preparación)*
+- [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md) *(en preparación)*
+- [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md) *(en preparación)*
+- [🔐 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md) *(en preparación)*
+- [🌀 Psycho – DockerLabs](./CTFs/Psycho/README.md) *(en preparación)*
 
 ---
-
