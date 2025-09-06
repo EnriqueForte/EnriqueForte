@@ -17,7 +17,6 @@
 ---
 
 ## 🛠️ Tecnologías y herramientas
-## 🛠️ Tecnologías y herramientas
 <p align="left">
   
   <!-- Sistemas -->
