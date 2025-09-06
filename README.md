@@ -58,8 +58,8 @@
   - ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
   - 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app) 
   - 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
-  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/EmisionesCO2)
-  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte//UrlShortener)
+  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/emisiones-co2)
+  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte/url-shortener)
 
 ---
 
