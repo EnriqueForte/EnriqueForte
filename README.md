@@ -1,5 +1,5 @@
-<!-- Banner de ciber![ciberseguridad](https://github.com/user-attachments/assets/0e8459b1-037d-47f9-a149-947583de32b8)
-seguridad -->
+(https://github.com/user-attachments/assets/0e8459b1-037d-47f9-a149-947583de32b8)
+
 <p align="center">
   <img src="ok-ciber.png" alt="Enrique Forte - Ciberseguridad" width="100%" />
 </p>
