@@ -1,4 +1,4 @@
-(https://github.com/user-attachments/assets/0e8459b1-037d-47f9-a149-947583de32b8)
+<img src="ciberseguridad.jpg" alt="Mi foto de perfil" width="250">
 
 <p align="center">
   <img src="ok-ciber.png" alt="Enrique Forte - Ciberseguridad" width="100%" />
