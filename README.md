@@ -55,7 +55,7 @@
 ## 🎯 Logros y proyectos
 - ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
 - ✅ Desarrollo de aplicaciones como:
-  - ✈️ [**Gestión de Vuelos y Pasajeros**](README.md)
+  - ✈️ [**Gestión de Vuelos y Pasajeros**](EnriqueForte/GestionVuelosyPasajeros/blob/master/README.md)
   - 🌦️ [**Aplicación Meteorológica**](Proyectos/AppMeteorologica/README.md) 
   - 🛠️ [**Servicio de revisión de código**](Proyectos/ServicioRevisionCodigo/README.md)
   - 🌍 [**Emisiones CO₂**](Proyectos/EmisionesCO2/README.md)
