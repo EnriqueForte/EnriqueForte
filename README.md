@@ -85,7 +85,7 @@ Actualmente estoy practicando y resolviendo CTFs en plataformas como **TryHackMe
 Próximamente iré subiendo mis **writeups** organizados.
 
 ### 🔹 Progreso
-- Hammer – TryHackMe [Walkthrough](https://github.com/EnriqueForte/CTFs/Hammer)
+- Hammer – TryHackMe [Walkthrough](https://github.com/EnriqueForte/EnriqueForte/CTFs/Hammer)
 - Mr. Robot – TryHackMe *(writeup en preparación)*  
 - Basic Pentesting – TryHackMe *(writeup en preparación)*  
 - OhSINT – TryHackMe *(writeup en preparación)*  
