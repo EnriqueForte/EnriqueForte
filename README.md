@@ -89,10 +89,10 @@ Actualmente varios están proceso de preparación de su correspondiente Walkthro
 
 - [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) ✅
 - [🥒 Pickle Rick – TryHackMe](./CTFs/Pickle%20Rick/README.md) ✅
+- [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/Bounty%20Hacker/README.md) ✅
 - [🤖 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md) *(en preparación)*
 - [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md) *(en preparación)*
 - [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) *(en preparación)*
-- [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/BountyHacker/README.md) *(en preparación)*
 - [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md) *(en preparación)*
 - [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md) *(en preparación)*
 - [🔐 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md) *(en preparación)*
