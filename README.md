@@ -53,7 +53,7 @@
 
 ### 🛡️ Mis estadísticas en TryHackMe
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/whoisKiK3.png?timestamp=20250906)](https://tryhackme.com/p/whoisKiK3)
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/whoisKiK3.png?timestamp=202509007)](https://tryhackme.com/p/whoisKiK3)
 
 
 ---
