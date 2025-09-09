@@ -81,6 +81,14 @@
 
 ---
 
+## 🔧 Herramientas y Proyectos
+
+Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
+
+- 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos desarrollado en **Python**, con opciones de escaneo básico, rangos de puertos y exportación de resultados. Incluye un banner en HTML/CSS creado como proyecto visual.
+
+---
+
 ## 🕵️ CTFs resueltos
 
 Aquí encontrarás mis writeups de CTFs en plataformas como **TryHackMe** y **DockerLabs**.
