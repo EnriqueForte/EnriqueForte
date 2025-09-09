@@ -65,7 +65,7 @@
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=EnriqueForte&theme=radical" height="150" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app?user=EnriqueForte&theme=radical" height="150" />
 </p>
 
 ---
