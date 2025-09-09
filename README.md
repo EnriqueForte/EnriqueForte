@@ -81,7 +81,7 @@
 
 ---
 
-## 🔧 Herramientas y Proyectos
+## 🔧 Herramientas para Ciberseguridad
 
 Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
 
