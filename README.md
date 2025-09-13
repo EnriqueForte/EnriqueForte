@@ -53,7 +53,8 @@
 
 ### 🛡️ Mis estadísticas en TryHackMe
 
-![TryHackMe](https://tryhackme.com/badge/5368397)
+![TryHackMe Badge]<img src="whoisKiKe3.png" alt="stats">
+
 
 ---
 
