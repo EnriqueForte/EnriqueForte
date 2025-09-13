@@ -53,7 +53,7 @@
 
 ### 🛡️ Mis estadísticas en TryHackMe
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/whoisKiK3.png?timestamp=202509009)](https://tryhackme.com/p/whoisKiK3)
+[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/whoisKiK3.png?refresh=20250913)](https://tryhackme.com/p/whoisKiK3)
 
 
 ---
@@ -96,6 +96,7 @@ Aquí encontrarás mis writeups de CTFs en plataformas como **TryHackMe** y **Do
 
 Actualmente varios están proceso de preparación de su correspondiente Walkthrough.
 
+- [📂 Include – TryHackMe](./CTFs/Include/README.md) ✅
 - [💉 Injectics – TryHackMe](./CTFs/Injectics/README.md) ✅
 - [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) ✅
 - [🥒 Pickle Rick – TryHackMe](./CTFs/Pickle%20Rick/README.md) ✅
