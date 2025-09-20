@@ -4,7 +4,7 @@
 
 El Bandito es un CTF de TryHackMe orientado a la práctica de reconocimiento, enumeración y explotación de servicios comunes en máquinas Linux.
 
-En este writeup seguiremos un flujo típico: reconocimiento pasivo/activo → enumeración de puertos y servicios → enumeración específica por servicio → obtención de acceso inicial → escalada de privilegios y captura de flags.
+En este writeup seguiremos un flujo típico: reconocimiento pasivo/activo → enumeración de puertos y servicios → enumeración específica por servicio → obtención de acceso inicial → y captura de flags.
 
 ## Paso 1 — Recon básico / Ping de comprobación
 
