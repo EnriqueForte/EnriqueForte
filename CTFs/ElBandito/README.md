@@ -360,8 +360,81 @@ Eso significa que sabemos cómo enviar mensajes con la sesión autenticada. Si m
 
 podriamos probar stored XSS inyectando un payload controlado y luego comprobar en la interfaz si se ejecuta.
 
+### 🔎 Paso 17 Prueba envío de mensajes
+
+<img width="1094" height="686" alt="probando summuglin" src="https://github.com/user-attachments/assets/f957ed21-66b4-4138-a02f-11c4f12d1595" />
+
+### Descripción de la prueba realizada
+
+Objetivo: comprobar cómo procesa y almacena la aplicación los mensajes enviados desde la interfaz autenticada, evaluar si es posible un stored XSS o si hay mitigaciones (escape/CSP).
+
+Qué se capturó (en la imagen):
+
+Una petición POST /messages seguida por POST /send_message (la app usa /send_message para publicar mensajes).
+
+Content-Type: application/x-www-form-urlencoded.
+
+Cookie de sesión presente en la petición (session=...) — indica que estabas autenticado.
+
+Payload enviado en el cuerpo: data=what (ejemplo de prueba).
+
+Respuesta del servidor al acceder a /messages (HTTP/2 200) con cabeceras relevantes:
+
+Content-Security-Policy: default-src 'self'; script-src 'self'; object-src 'none';
+
+X-Content-Type-Options: nosniff
+
+X-Frame-Options: SAMEORIGIN
+
+En el body de la respuesta se ve el HTML de la página messages (estructura del chat y los mensajes ya renderizados).
+
+No hay respuestas en el chat por lo que no funcionó la prueba
 
 
+<img width="1259" height="634" alt="no hay respuestas aun " src="https://github.com/user-attachments/assets/dae660be-2791-456b-a017-be96f0ea4b74" />
+
+
+## 🔎 Paso 18 Prueba variando parámetros en POST /send_message (resultado: 503 Backend fetch failed)
+
+###Descripción breve
+
+Hice una nueva prueba enviando un mensaje con parámetros diferentes al endpoint de mensajes (POST /send_message). 
+
+La petición fue aceptada por el front-end/reverse-proxy pero la respuesta devolvió un error 503 Backend fetch failed con una cabecera/plantilla de Varnish cache server. 
+
+Esto indica que el proxy (Varnish) no pudo conectar o recibir respuesta del backend al procesar la petición.
+
+Qué hice (captura y reproducción):
+
+<img width="1070" height="534" alt="probando summuglin 2 varnish server" src="https://github.com/user-attachments/assets/6db2d8e6-0999-49a6-adf8-704037f56f35" />
+
+
+Envié un mensaje con un cuerpo distinto (data=vamos nosotros) desde la sesión autenticada (cookie presente en la petición).
+
+Observé la respuesta: HTTP/2 503 Service Unavailable con contenido HTML que contiene 503 Backend fetch failed y mención de Varnish cache server.
+
+## 🔎 Paso 19 Prueba: variación de parámetros / envío múltiple (smuggling de mensajes) y lectura vía puerto 80/getMessages (Segunda Flag)
+
+### Objetivo
+
+Probar si variando cabeceras y enviando múltiples POST al endpoint de envío de mensajes (/send_message) se pueden insertar entradas visibles en el endpoint de lectura (/getMessages) 
+
+y si esto permite introducir/recuperar contenido sensible (por ejemplo flags).
+
+### Descripción de la prueba (lo que hice): 
+
+<img width="1089" height="480" alt="utlimo smugglin variando content" src="https://github.com/user-attachments/assets/eb26ed20-3f04-47a5-9352-aa1928fe78b5" />
+
+
+Desde una sesión autenticada (cookie session=...) envié varias peticiones POST /send_message con distinto Content-Length y distintos cuerpos (data=a, data=a).
+
+En uno de los intentos la respuesta del proxy fue 503 Backend fetch failed (Varnish), así que reintenté alterando longitudes y añadiendo otro POST inmediatamente después.
+
+Después descargué el endpoint /getMessages y busqué el contenido almacenado/visible — allí apareció el texto inyectado 
+
+y, en uno de los resultados, la segunda flag (formato THM{...}) quedó visible en la salida de getMessages.
+
+<img width="1424" height="646" alt="segunda flag dentro de get message" src="https://github.com/user-attachments/assets/7dd9718d-8d6d-4311-b333-752fd0425843" />
 
 
 
