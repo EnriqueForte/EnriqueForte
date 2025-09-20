@@ -238,11 +238,11 @@ En la consola aparece WebSocket is closed now. y errores — por tanto el WS est
 <img width="568" height="145" alt="respuesta prueba para SSRF en burn puerto 8080" src="https://github.com/user-attachments/assets/a8e068cf-f759-40ff-b4a3-0a248b7463d4" />
 
 
-Lo que muestran tus pruebas es que el servidor objetivo realiza una petición HTTP hacia la IP que tú controlas. 
+Lo que muestran tus pruebas es que el servidor objetivo realiza una petición HTTP hacia la IP que controlamos. 
 
-En la captura se ve claramente la petición GET / HTTP/1.1 hacia 10.11.147.155:8088 y tu python3 -m http.server 8088 ha registrado la conexión. 
+En la captura se ve claramente la petición GET / HTTP/1.1 hacia 10.11.147.155:8088 y python3 -m http.server 8088 ha registrado la conexión. 
 
-Eso significa SSRF (al menos de tipo “blind/http-request”): el servidor puede alcanzar recursos que tú especifiques en el parámetro url de /isOnline.
+Eso significa SSRF (al menos de tipo “blind/http-request”): el servidor puede alcanzar recursos que especifiquemos en el parámetro url de /isOnline.
 
 ### ¿Qué hemos confirmado?
 
@@ -260,3 +260,109 @@ El servidor intenta conectar a la URL — hemos verificado porque nuestra máqui
 Creo un servidor HTTP propio para responder a las peticiones que genere el /isOnline es la forma más práctica para confirmar SSRF, 
 
 obtener cabeceras completas, probar distintos cuerpos de respuesta, simular actuator y hacer timing attacks.
+
+## 🔎 Paso 12 Análisis rápido: probando servidor creado en Python
+
+
+<img width="760" height="301" alt="Burn suite probando servidor hacia script python" src="https://github.com/user-attachments/assets/131c9eb3-a5ff-408a-aa36-ba59570acdff" />
+
+<img width="544" height="101" alt="probamos servidor mediante script" src="https://github.com/user-attachments/assets/5529abbf-a4fb-453f-8a43-8c5d124744f0" />
+
+1 .Petición GET /isOnline?url=http://10.11.147.155:8087 el objetivo realmente hizo la petición al servidor (ssrf_server.py la registró).
+
+2 .La respuesta que devolvió el objetivo en la pestaña Response fue HTTP/1.1 101 (Switching Protocols) y en las cabeceras aparece X-Application-Context: application:8081.
+
+### Interpretación inmediata:
+
+El backend del objetivo respondió al handshake con 101 Switching Protocols — es un indicio de que el servidor objetivo intentó upgrade (probablemente WebSocket) hacia la URL que le proporcionamos o hacia algún upstream.
+
+La cabecera X-Application-Context: application:8081 sugiere además que la petición fue manejada/pasada por un componente (probablemente Spring/Nginx) 
+
+que está vinculado a una aplicación interna escuchando en :8081. Esa información es valiosa para la enumeración interna.
+
+## 🔎 Paso 13 — Resultado del SSRF: hemos descubierto /admin-creds en la app interna (MD)
+
+<img width="903" height="512" alt="probando socket puerto 8080 ⁄ trace" src="https://github.com/user-attachments/assets/c411b08f-56a8-497f-9d1a-aad0319f00b2" />
+
+### Resumen breve:
+
+Las últimas pruebas muestran que al invocar /isOnline?url=... el backend no sólo conecta, sino que estamos recibiendo trazas/httptrace internas que revelan peticiones hechas por la aplicación. 
+
+En las trazas aparece la ruta /admin-creds (método GET, status: 200) en la aplicación interna (X-Application-Context: application:8081). 
+
+Eso significa que podemos pedir explícitamente esa URL vía SSRF para leer su contenido (probablemente credenciales administrativas).
+
+### Interpretación de la captura
+
+La respuesta del servidor a tu SSRF mostró JSON con entradas que contienen "path": "/admin-creds" y response: { "X-Application-Context": "application:8081", ..., "status":"200" }.
+
+Esto indica que la aplicación interna tiene un endpoint /admin-creds y que internamente responde con 200 — es muy probable que devuelva credenciales o información de admin.
+
+## 🔎 Paso 14 — Credenciales extraídas y siguientes pasos (todo en Markdown)
+
+Resultado: mediante SSRF (/isOnline) y lectura de trazas internas (/trace) hemos obtenido directamente las credenciales administrativas expuestas en /admin-creds:
+
+Captura: la respuesta mostró HTTP/1.1 200 y el body username:hAckLIEN password:YouCanCatchUsInYourDreams404
+
+<img width="902" height="388" alt="clave del admin en directorio trace" src="https://github.com/user-attachments/assets/767a17f9-fa5c-4a5b-a49b-fdd6472324a0" />
+
+### Qué significa esto
+
+Tener credenciales administrativas abre varias vías:
+
+Autenticación en la web (formulario /login) para acceder a paneles/funcionalidad protegida.
+
+Si las credenciales también sirven para SSH (posible si hay un usuario local con ese nombre), podríamos iniciar sesión por SSH.
+
+Acceso a endpoints internos o acciones administrativas (reactivar WebSocket, ver flags, leer archivos, etc.).
+
+### 🔎 Paso 15 — Explotación final: extracción de la flag vía SSRF (Primera Flag)
+
+**Vulnerabilidad encontrada:** la página `services.html` hace `fetch('/isOnline?url=...')`. El endpoint `/isOnline` no valida el parámetro `url`, permitiendo SSRF.
+
+**Ejecución:** apunté el parámetro `url` a la aplicación interna indicada por `X-Application-Context: application:8081` y probé varias rutas internas. Al solicitar `/admin-flag` (vía SSRF) obtuve la bandera:
+
+<img width="902" height="352" alt="primera flag en directorio admin-flag" src="https://github.com/user-attachments/assets/09810c13-d404-41d6-83d0-b531556c466c" />
+
+
+Resultado: la respuesta contenía la flag:
+
+THM{...}
+
+Conclusión: mediante SSRF se pudo leer recursos internos expuestos por la app en :8081, incluida la ruta /admin-flag que contenía la flag del reto.
+
+### 🔎 Paso 16 Acceso al panel Access del puerto 80 mediante credenciales obtenidas
+
+#### Objetivo: usar las credenciales extraídas (hAckLIEN:YouCanCatchUsInYourDreams404) para autenticarse en la aplicación y comprobar funciones disponibles en el panel (por ejemplo el chat / mensajes).
+
+<img width="1027" height="627" alt="accedo al menu puerto 80 con claves obtenidas" src="https://github.com/user-attachments/assets/2dbfe569-ccbc-47e8-98fe-325fb10efb09" />
+
+
+<img width="1276" height="511" alt="accedo a un chat" src="https://github.com/user-attachments/assets/c1c7e018-f091-44b0-a0f4-0ddf81a9288d" />
+
+### 🔎 Paso 16 Prueba XSS (envío de mensaje)
+
+Petición observada en Burp: `POST /send_message` con `data=hello` y cookie de sesión.
+
+<img width="520" height="487" alt="capturo solcitud enviar mensaje" src="https://github.com/user-attachments/assets/02e8e1dd-5cfe-4181-9828-76a597f56ce4" />
+
+### La captura muestra lo siguiente (resumen):
+
+POST /send_message
+
+Content-Type: application/x-www-form-urlencoded
+
+Cookie de sesión presente (session=...) — estás autenticado.
+
+Payload del formulario: data=hello
+
+Eso significa que sabemos cómo enviar mensajes con la sesión autenticada. Si messages.js inserta esos mensajes con innerHTML (como vimos antes),
+
+podriamos probar stored XSS inyectando un payload controlado y luego comprobar en la interfaz si se ejecuta.
+
+
+
+
+
+
+
