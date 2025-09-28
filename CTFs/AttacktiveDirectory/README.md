@@ -1,5 +1,7 @@
 # Attacktive Directory – TryHackMe (Walkthrough)
 
+## Dificultad: Medium
+
 ## 🧭 Introducción
 **Attacktive Directory** es una sala práctica centrada en comprometer un **Domain Controller** de Active Directory: desde la fase de descubrimiento y enumeración (Kerberos/SMB) hasta el abuso de configuraciones débiles para obtener credenciales y, finalmente, el control del dominio. El reto propone si puedes **explotar un controlador de dominio vulnerable** y guía por las técnicas clave para lograrlo.
 
