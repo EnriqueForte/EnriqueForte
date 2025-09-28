@@ -71,15 +71,6 @@ Se comprometió un **Domain Controller** de Active Directory (`AttacktiveDirecto
 
 ---
 
-## 📎 Evidencias recopiladas
-- `enum/nmap.txt`, `enum/kerbrute_valid.txt`
-- `enum/asrep_hashes.txt` + resultado de `john`
-- `loot/backup_credentials.txt` (y su decodificado)
-- `loot/secretsdump_justdc.txt`
-- Capturas: sesión `psexec.py` y lectura de flags
-
----
-
 ## 🧠 Lecciones aprendidas
 - En AD, **una mala configuración Kerberos** + **fuga mínima** (texto/base64) + **permisos excesivos** escalan a **compromiso total de dominio** en pocos pasos.
 - Centralizar y **automatizar la recolección de evidencias** reduce el tiempo de análisis y mejora el reporte.
