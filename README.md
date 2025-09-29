@@ -87,6 +87,8 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
 
 - 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos desarrollado en **Python**, con opciones de escaneo básico, rangos de puertos y exportación de resultados. Incluye un banner en HTML/CSS creado como proyecto visual.
 
+- 🔐 [**WiFi Guardian (Wi-Fi Scanner)**](https://github.com/EnriqueForte/wifi-guardian) → Vigilancia de tu red local con escaneo ARP/ICMP, baseline de dispositivos, alias y fabricantes (OUI), monitor de ARP spoofing y detector de deauth (Linux). Genera informe HTML con tema oscuro y buscador. CLI en Python/Typer (Windows/Linux).
+
 ---
 
 ## 🕵️ CTFs resueltos
