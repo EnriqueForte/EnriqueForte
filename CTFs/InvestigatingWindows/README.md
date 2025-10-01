@@ -37,7 +37,7 @@ Una vez que las credenciales sean aceptadas, tendremos acceso al escritorio del 
 
 Ahora, continuemos con el Paso 2: Reconocimiento del Sistema Operativo y, de paso, respondemos la primera pregunta del CTF.
 
-## 💻 Paso 2: Reconocimiento del Sistema Operativo y Versión (Pregunta 1)
+## 💻 Paso 2: Reconocimiento del Sistema Operativo y Versión
 
 El objetivo es obtener la versión y el año de la máquina Windows comprometida.
 
@@ -62,7 +62,7 @@ PowerShell	systeminfo | select-string "Nombre del SO"	Muestra información detal
 
 <img width="983" height="789" alt="Ejcutamos PowerShell comando GetComputerinfo" src="https://github.com/user-attachments/assets/c53fb7b5-7751-4ff7-8bd0-3c43f7179a70" />
 
-## 🕵️ Paso 3: Identificar el Último Inicio de Sesión (Pregunta 2)
+## 🕵️ Paso 3: Identificar el Último Inicio de Sesión
 
 Hemos utilizado un método de PowerShell más preciso (Get-ComputerInfo -Property "Os*"), y la salida en tu captura Getinfo con Property OS para resumir la busqueda y obtener ver sis op.png es clara:
 
@@ -125,7 +125,7 @@ Para propósitos del CTF, la pregunta se refiere al último usuario  interactuó
 John el 03/02/2019 a las 5:48:32 PM.
 
 
-## Paso 6: Identificar la Conexión Maliciosa de Inicio (Pregunta 4)
+## Paso 6: Identificar la Conexión Maliciosa de Inicio
 
 La pregunta es: "¿Qué dirección IP intenta contactar el sistema cuando arranca por primera vez?"
 
@@ -142,7 +142,7 @@ Para ver el contenido utilizamos el bloc de notas:
 Ya con el tipo de conexiones nos podemos dar cuenta de que hubo algun tipo de envenenamiento.
 
 
-## ⚙️ Paso 7: Búsqueda de Persistencia en el Registro (Pregunta 5 y Posteriores)
+## ⚙️ Paso 7: Búsqueda de Persistencia en el Registro
 
 Accederemos a regedit para ver el registro.png, indica que ahora buscaremos en el Registro de Windows (regedit). 
 
@@ -164,7 +164,7 @@ HKEY_CURRENT_USER (Para el usuario actual)	SOFTWARE\Microsoft\Windows\CurrentVer
 
 
 
-## 👥 Paso 8: Identificar Cuentas con Privilegios Elevados (Pregunta 5)
+## 👥 Paso 8: Identificar Cuentas con Privilegios Elevados
 
 La pregunta del CTF es: "¿Qué dos cuentas tenían privilegios administrativos (aparte del usuario Administrator)? (Listarlas en orden alfabético)."
 
