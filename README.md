@@ -3,7 +3,7 @@
 # 👋 ¡Hola! Soy Enrique Forte  
 
 💻 **Estudiante DAM especializado en Java, Python, SQL y Desarrollo de Software**  
-🔐 **Aspirante a Ciberseguridad | Pentesting | Analista | TryHackMe Enthusiast**
+🔐 **Master Consultor en Ciberseguridad | Pentesting | Analista | TryHackMe Enthusiast**
 
 ---
 
