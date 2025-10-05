@@ -13,6 +13,7 @@
 - 🛡️ Experiencia práctica con **TryHackMe** → rutas, máquinas y retos de pentesting.  
 - 📈 Interesado en crecer en áreas de **Red Team, Blue Team y Seguridad Ofensiva/Defensiva**.  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/enriqueforte/)
+- 🔗 [Portfolio — Enrique Forte](https://enriqueforte.web.app)
 
 ---
 
