@@ -91,33 +91,60 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
 
 ---
 
-## 🕵️ CTFs resueltos
+## 🕵️ CTFs Resueltos (Writeups Terminados)
 
-Aquí encontrarás mis writeups de CTFs en plataformas como **TryHackMe** y **DockerLabs**.
+Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y listos para consultar, agrupados por la **temática principal** que abordaron.
 
-Actualmente varios están proceso de preparación de su correspondiente Walkthrough.
+### 🌐 Web Hacking y Servicios
 
-- [🔑💻 Overpass – TryHackMe](./CTFs/OverPass/README.md) ✅
-- [💻🐘 Lazy Admin (SweetRice CMS) – TryHackMe](./CTFs/LazyAdmin/README.md) ✅
-- [🕵️‍♀️💻 Investigating Windows – TryHackMe](./CTFs/InvestigatingWindows/README.md) ✅
-- [🛠️💻 Toolsrus – TryHackMe](./CTFs/ToolsRus/README.md) ✅
-- [🏢🔐 Attacktive Directory – TryHackMe](./CTFs/AttacktiveDirectory/README.md) ✅
-- [🧩🔑 Crack The Hash – TryHackMe](./CTFs/CrackTheHash/README.md) ✅
-- [🔐 Agent Sudo – TryHackMe](./CTFs/AgentSudo/README.md) ✅
-- [🧩 SimpleCTF – TryHackMe](./CTFs/SimpleCTF/README.md) ✅
-- [🏴‍☠️ El Bandito – TryHackMe](./CTFs/ElBandito/README.md) ✅
-- [🕵️ What's Your Name? – TryHackMe](./CTFs/Whats%20Your%20Name%3F/README.md)✅
-- [📂 Include – TryHackMe](./CTFs/Include/README.md) ✅
-- [💉 Injectics – TryHackMe](./CTFs/Injectics/README.md) ✅
-- [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) ✅
-- [🥒 Pickle Rick – TryHackMe](./CTFs/Pickle%20Rick/README.md) ✅
-- [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/Bounty%20Hacker/README.md) ✅
-- [🤖 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md) *(en preparación)*
-- [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md) *(en preparación)*
-- [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) *(en preparación)*
-- [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md) *(en preparación)*
-- [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md) *(en preparación)*
-- [🔐 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md) *(en preparación)*
-- [🌀 Psycho – DockerLabs](./CTFs/Psycho/README.md) *(en preparación)*
+| CTF | Plataforma | Estado |
+| :--- | :--- | :---: |
+| [🔑💻 Overpass – TryHackMe](./CTFs/OverPass/README.md) | TryHackMe | ✅ |
+| [💻🐘 Lazy Admin (SweetRice CMS) – TryHackMe](./CTFs/LazyAdmin/README.md) | TryHackMe | ✅ |
+| [📂 Include – TryHackMe](./CTFs/Include/README.md) | TryHackMe | ✅ |
+| [💉 Injectics – TryHackMe](./CTFs/Injectics/README.md) | TryHackMe | ✅ |
+| [🥒 Pickle Rick – TryHackMe](./CTFs/Pickle%20Rick/README.md) | TryHackMe | ✅ |
+
+### 👑 Infraestructura y Active Directory
+
+| CTF | Plataforma | Estado |
+| :--- | :--- | :---: |
+| [🏢🔐 Attacktive Directory – TryHackMe](./CTFs/AttacktiveDirectory/README.md) | TryHackMe | ✅ |
+| [🛠️💻 Toolsrus – TryHackMe](./CTFs/ToolsRus/README.md) | TryHackMe | ✅ |
+
+### 🛡️ Escalamiento de Privilegios y Misceláneo
+
+| CTF | Plataforma | Estado |
+| :--- | :--- | :---: |
+| [🔐 Agent Sudo – TryHackMe](./CTFs/AgentSudo/README.md) | TryHackMe | ✅ |
+| [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) | TryHackMe | ✅ |
+| [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/Bounty%20Hacker/README.md) | TryHackMe | ✅ |
+| [🧩🔑 Crack The Hash – TryHackMe](./CTFs/CrackTheHash/README.md) | TryHackMe | ✅ |
+| [🧩 SimpleCTF – TryHackMe](./CTFs/SimpleCTF/README.md) | TryHackMe | ✅ |
+| [🏴‍☠️ El Bandito – TryHackMe](./CTFs/ElBandito/README.md) | TryHackMe | ✅ |
+
+### 🔍 OSINT y Forense
+
+| CTF | Plataforma | Estado |
+| :--- | :--- | :---: |
+| [🕵️‍♀️💻 Investigating Windows – TryHackMe](./CTFs/InvestigatingWindows/README.md) | TryHackMe | ✅ |
+| [🕵️ What's Your Name? – TryHackMe](./CTFs/Whats%20Your%20Name%3F/README.md) | TryHackMe | ✅ |
 
 ---
+
+## 🚧 CTFs en Preparación (Walkthrough Pendiente)
+
+Estos writeups están actualmente **en proceso de creación o revisión**. Los iré moviendo a la sección superior una vez estén completos.
+
+### TryHackMe
+
+- [🤖 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md)
+- [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md)
+- [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md)
+- [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md)
+- [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md)
+- [🔐 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md)
+
+### DockerLabs
+
+- [🌀 Psycho – DockerLabs](./CTFs/Psycho/README.md)
