@@ -1,4 +1,4 @@
-# 💻 Escribiendo el Write-up de TryHackMe: Overpass 🔐
+# 💻 Write-up de TryHackMe: Overpass 🔐
 
 Bienvenido a este recorrido por la máquina Overpass de TryHackMe! A continuación, documentaremos los pasos necesarios para obtener las banderas de usuario y root.
 
