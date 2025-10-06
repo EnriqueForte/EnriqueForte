@@ -117,6 +117,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🐇👑 Wonderland – TryHackMe](./CTFs/Wonderland/README.md) | TryHackMe | ✅ |
 | [🔐 Agent Sudo – TryHackMe](./CTFs/AgentSudo/README.md) | TryHackMe | ✅ |
 | [🔨 Hammer – TryHackMe](./CTFs/Hammer/README.md) | TryHackMe | ✅ |
 | [🏴‍☠️ Bounty Hacker – TryHackMe](./CTFs/Bounty%20Hacker/README.md) | TryHackMe | ✅ |
