@@ -555,4 +555,108 @@ URL Base Vulnerable: http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/a
 
 Al acceder sin parámetros, la página muestra un encabezado "Field configuration:".
 
+## 💥 Paso 15: LFI Avanzado y Extracción de Credenciales
+
+Habiendo confirmado la vulnerabilidad de Inclusión de Archivos Locales (LFI) y obtenido una lista de usuarios del sistema (Paso 14), el objetivo ahora es usar esta vulnerabilidad para leer archivos de configuración sensibles y conseguir credenciales que nos permitan acceder al sistema mediante SSH o la web.
+
+1. Confirmación de Lectura de /etc/passwd
+
+<img width="1404" height="502" alt="etc passw" src="https://github.com/user-attachments/assets/2d670d7c-3d4c-45e6-952e-db99a1d5b16e" />
+
+
+La URL con path traversal funciona, revelando los usuarios del sistema, incluyendo skynet y milesdyson, ambos con shells de inicio de sesión.
+
+🖼️ URL:
+````
+http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../etc/passwd
+````
+
+
+💥 Paso 15: LFI Avanzado y Extracción de Credenciales
+Habiendo confirmado la vulnerabilidad de Inclusión de Archivos Locales (LFI) y obtenido una lista de usuarios del sistema (Paso 14), el objetivo ahora es usar esta vulnerabilidad para leer archivos de configuración sensibles y conseguir credenciales que nos permitan acceder al sistema mediante SSH o la web.
+
+1. Confirmación de Lectura de /etc/passwd
+La URL con path traversal funciona, revelando los usuarios del sistema, incluyendo skynet y milesdyson, ambos con shells de inicio de sesión.
+
+🖼️ URL Explotada:
+http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../etc/passwd
+(La captura de /etc/passwd confirma el éxito del LFI.)
+
+2. Extracción del Código Fuente (PHP Filter)
+   
+El archivo exploit (25971.txt) del Paso 13 sugiere una técnica avanzada para leer código fuente de archivos PHP, incluso si la ejecución del archivo falla. Utilizamos el wrapper de PHP php://filter/convert.base64-encode para codificar el contenido de un archivo PHP importante en Base64, lo que nos permite leerlo.
+
+El archivo Configuration.php dentro del CMS es un candidato ideal para contener credenciales de base de datos o configuración.
+
+<img width="1414" height="368" alt="el exploit del archivo que leimos" src="https://github.com/user-attachments/assets/17c3d84c-9a89-4925-a588-e3efdecd0d5c" />
+
+
+💻 URL:
+Aplicamos el exploit tal como se describe en la documentación:
+
+<img width="1406" height="269" alt="leo config" src="https://github.com/user-attachments/assets/af54f60c-1efc-41ad-875f-187f3354d49c" />
+
+
+http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=php://filter/convert.base64-encode/resource=../config/Configuration.php
+
+(Es necesario ajustar el path traversal para llegar a la ruta correcta del archivo Configuration.php)
+
+
+## 🔑 Paso 16: Decodificación y Extracción de Credenciales de la Base de Datos
+
+En el paso anterior, utilizamos la vulnerabilidad LFI con el wrapper php://filter para obtener el contenido codificado en Base64 del archivo de configuración del CMS, Configuration.php. Ahora, decodificamos ese contenido para extraer credenciales.
+
+1. Decodificación del Archivo
+   
+Decodificamos la cadena Base64 obtenida (que previamente guardamos en un archivo, aquí llamado config) usando el comando base64 -d.
+
+<img width="1539" height="350" alt="decodifico config" src="https://github.com/user-attachments/assets/244e5377-e13b-42ed-90c8-4db251667949" />
+
+
+💻 Comando:
+````
+Bash
+
+cat config | base64 -d
+````
+2. Análisis del Código Fuente
+   
+El código decodificado revela la clase Configuration de Cuppa CMS, la cual contiene la información de conexión a la base de datos:
+````
+PHP
+
+<php
+class Configuration{
+    public $host = 'localhost';
+    public $db = 'cuppa';
+    public $user = 'root';
+    public $password = 'password123';
+    public $table_prefix = 'cu_';
+    ...
+}
+?>
+````
+3. Descubrimiento de Nuevas Credenciales
+   
+Hemos encontrado las credenciales de la base de datos, las cuales son a menudo reutilizadas para otros servicios del sistema:
+
+Usuario (DB): root
+
+Contraseña (DB): password123
+
+También observamos una variable $token con un valor que podría ser una contraseña o clave (pero es menos probable que sea la credencial SSH principal):
+
+Token: 0BGlPQlRwFMX
+
+4. Próxima Estrategia
+   
+Tenemos dos nuevos pares de credenciales:
+
+root:password123 (Credenciales de Base de Datos).
+
+skynet:Cuppa2008 (Asumido en el paso anterior si no estaba en la configuración de la DB).
+
+
+
+
 
