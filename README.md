@@ -86,9 +86,12 @@
 
 Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
 
-- 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos desarrollado en **Python**, con opciones de escaneo básico, rangos de puertos y exportación de resultados. Incluye un banner en HTML/CSS creado como proyecto visual.
+- 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos en **Python** con escaneo básico, rangos de puertos y exportación de resultados. Incluye banner en HTML/CSS.
 
-- 🔐 [**WiFi Guardian (Wi-Fi Scanner)**](https://github.com/EnriqueForte/wifi-guardian) → Vigilancia de tu red local con escaneo ARP/ICMP, baseline de dispositivos, alias y fabricantes (OUI), monitor de ARP spoofing y detector de deauth (Linux). Genera informe HTML con tema oscuro y buscador. CLI en Python/Typer (Windows/Linux).
+- 🔐 [**WiFi Guardian (Wi-Fi Scanner)**](https://github.com/EnriqueForte/wifi-guardian) → Vigilancia de red local con escaneo ARP/ICMP, baseline de dispositivos, alias y fabricantes (OUI), detección de ARP spoofing y deauth (Linux). Informe HTML con tema oscuro y buscador. CLI en Python/Typer.
+
+- 🧰 [**Automatizaciones n8n (Monorepo)**](https://github.com/EnriqueForte/automatizaciones-n8n)
+  - 🧪 [**VirusTotal_IP_Checker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/VirusTotal_IP_Checker) → Webhook que analiza IPs en **VirusTotal**, resume indicadores (malicious/suspicious/harmless/undetected, reputación, ASN/país) y envía **alertas** (Telegram) + **registro** (Google Sheets). Incluye JSON sanitizado, docs y arquitectura.
 
 ---
 
