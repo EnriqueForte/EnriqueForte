@@ -118,6 +118,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🍲💻 Soupedecode01 – TryHackMe](./CTFs/Soupedecode01/README.md) | TryHackMe | ✅ |
 | [🏢🔐 Attacktive Directory – TryHackMe](./CTFs/AttacktiveDirectory/README.md) | TryHackMe | ✅ |
 | [🛠️💻 Toolsrus – TryHackMe](./CTFs/ToolsRus/README.md) | TryHackMe | ✅ |
 
