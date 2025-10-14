@@ -21,4 +21,3 @@ La sala **Soupedecode01** de TryHackMe fue un desafío altamente educativo que s
 En resumen, esta sala refuerza la importancia de las configuraciones seguras en Active Directory, especialmente en cuentas de servicio y la gestión de copias de seguridad.
 
 ---
-[Volver al Índice del Write-up](CTFs/Soupedecode01)
