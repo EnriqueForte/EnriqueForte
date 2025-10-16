@@ -107,6 +107,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🛡️ RCE + SYSTEM - Relevant – TryHackMe ](./CTFs/Relevant/README.md) | TryHackMe | ✅ |
 | [🤖💾 Cyborg – TryHackMe ](./CTFs/Cyborg/README.md) | TryHackMe | ✅ |
 | [🔑💻 Overpass – TryHackMe](./CTFs/OverPass/README.md) | TryHackMe | ✅ |
 | [💻🐘 Lazy Admin (SweetRice CMS) – TryHackMe](./CTFs/LazyAdmin/README.md) | TryHackMe | ✅ |
