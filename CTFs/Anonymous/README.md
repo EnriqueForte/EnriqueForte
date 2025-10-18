@@ -73,6 +73,8 @@ ftp> ls
 ````
 Resultado (Captura de Pantalla):
 
+<img width="706" height="443" alt="me conecto por ftp anonymous+" src="https://github.com/user-attachments/assets/648f1407-7417-41cf-bc15-fde47bb1893b" />
+
 Los archivos encontrados son:
 
 clean.sh: Un script de shell con permisos de ejecución (-rwxrwxrwx).
@@ -102,8 +104,6 @@ Una vez descargados los tres archivos del directorio `/scripts` del FTP, procede
 
 Este archivo contiene una nota del administrador, confirmando la inseguridad crítica que estamos explotando.
 
-<img width="602" height="72" alt="leo to do txt" src="https://github.com/user-attachments/assets/1789e7e5-586f-419e-b455-ae4a40c1c4e8" />
-
 **Comando:**
 ```bash
 cat to_do.txt
@@ -111,11 +111,11 @@ cat to_do.txt
 
 Resultado (Captura de Pantalla):
 
+<img width="602" height="72" alt="leo to do txt" src="https://github.com/user-attachments/assets/1789e7e5-586f-419e-b455-ae4a40c1c4e8" />
+
 Conclusión: La nota "I really need to disable the anonymous login...it's really not safe" (Realmente necesito deshabilitar el inicio de sesión anónimo... no es seguro) confirma que el acceso anónimo es la vulnerabilidad intencional.
 
 4.2. removed_files.log
-
-<img width="573" height="545" alt="leo removed files1" src="https://github.com/user-attachments/assets/3a8922c2-c2c9-44d2-bf31-7e69a2ef02d7" />
 
 Este log muestra la actividad recurrente del script de limpieza, lo que indica que se está ejecutando mediante una tarea cron.
 
@@ -127,13 +127,13 @@ cat removed_files.log
 ````
 Resultado (Captura de Pantalla):
 
+<img width="573" height="545" alt="leo removed files1" src="https://github.com/user-attachments/assets/3a8922c2-c2c9-44d2-bf31-7e69a2ef02d7" />
+
 Conclusión: La repetición de la frase "Running cleanup script: nothing to delete" confirma que el script se ejecuta periódicamente (probablemente cada 5 minutos, como es común en este tipo de CTFs) y que nuestro payload será ejecutado.
 
 4.3. clean.sh
 
 Este es el archivo crítico. Su contenido revela qué está haciendo el servidor y, lo más importante, dónde inyectar nuestro reverse shell.
-
-<img width="968" height="221" alt="leo clean sh" src="https://github.com/user-attachments/assets/3ab98870-b7c8-4fb6-b62a-5f62fcc9c7ff" />
 
 Comando:
 ````
@@ -142,6 +142,8 @@ Bash
 cat clean.sh
 ````
 Resultado (Captura de Pantalla):
+
+<img width="968" height="221" alt="leo clean sh" src="https://github.com/user-attachments/assets/3ab98870-b7c8-4fb6-b62a-5f62fcc9c7ff" />
 
 Análisis del Script: El script verifica la existencia de archivos temporales. La parte crucial es que toda la lógica del script reside en este archivo y, dado que tenemos permisos de escritura en el directorio, podemos sobrescribir el contenido de clean.sh con nuestro código malicioso.
 
@@ -155,14 +157,15 @@ Aunque el vector de ataque principal se identificó en el servicio FTP, es una b
 
 Utilizamos la herramienta `smbclient` para listar los recursos compartidos disponibles en el servidor de forma anónima (`-N`).
 
-<img width="951" height="317" alt="entro por smb a pics y descargo los arhcivos" src="https://github.com/user-attachments/assets/3941d20d-6a42-476c-aee8-f2629ad4816e" />
-
 **Comando:**
 ```bash
 smbclient -N //10.10.10.180
 ````
 
 Resultado (Captura de Pantalla):
+
+<img width="742" height="271" alt="enumero con smb " src="https://github.com/user-attachments/assets/09409802-d17b-41a2-a3a9-3a4f87299f58" />
+
 
 Los recursos compartidos interesantes son:
 
@@ -183,6 +186,8 @@ Bash
 smbclient -N //10.10.10.180/pics
 ````
 
+<img width="951" height="317" alt="entro por smb a pics y descargo los arhcivos" src="https://github.com/user-attachments/assets/3941d20d-6a42-476c-aee8-f2629ad4816e" />
+
 Una vez conectados, listamos y descargamos los archivos encontrados.
 
 Comandos SMB:
@@ -192,8 +197,6 @@ Fragmento de código
 smb: \> ls
 smb: \> mget *
 ````
-
-Resultado (Captura de Pantalla):
 
 Se descargaron dos archivos: cargo2.jpg y puppos.jpeg.
 
