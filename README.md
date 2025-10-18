@@ -127,6 +127,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🖥️ Anonymous – TryHackMe](./CTFs/Anonymous/README.md) | TryHackMe | ✅ |
 | [🖼️🕵️ Brooklyn Nine Nine – TryHackMe ](./CTFs/BrooklynNineNine/README.md) | TryHackMe | ✅ |
 | [🤖💻 Skynet: The Judgment Day – TryHackMe](./CTFs/Skynet/README.md) | TryHackMe | ✅ |
 | [🐇👑 Wonderland – TryHackMe](./CTFs/Wonderland/README.md) | TryHackMe | ✅ |
