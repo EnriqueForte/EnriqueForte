@@ -348,3 +348,40 @@ El sitio confirma que el binario `env` es vulnerable cuando tiene el *bit* SUID.
 ```bash
 /usr/bin/env /bin/sh -p
 ````
+
+## 10. Escalada de Privilegios a Root y Flag Final 👑
+
+Habiendo identificado el binario SUID `/usr/bin/env` como el vector de escalada (Paso 9), procedemos a ejecutar la explotación para obtener acceso como el usuario `root`.
+
+### 10.1. Explotación de SUID en `env`
+
+Utilizamos la sintaxis proporcionada por **GTFOBins** que explota el hecho de que `env` mantiene los privilegios del propietario (`root`) al ejecutar un *shell* con el parámetro `-p`.
+
+**Comando de Escalada:**
+```bash
+/usr/bin/env /bin/sh -p
+````
+Resultado (Captura de Pantalla - Root Shell):
+
+<img width="816" height="537" alt="ejecuto el binario y soy root" src="https://github.com/user-attachments/assets/40bf003e-5506-4c78-92ec-49722131f712" />
+
+Tras la ejecución, verificamos nuestra identidad con whoami. La salida es root. ¡Hemos obtenido control total de la máquina!
+
+10.2. Obtención de la Flag de Root
+El paso final es localizar la bandera de root (root.txt), la cual se encuentra típicamente en el directorio /root.
+
+Comandos:
+````
+Bash
+
+cd /root
+ls
+cat root.txt
+````
+Resultado (Captura de Pantalla - Flag Final):
+
+<img width="375" height="135" alt="entro a root y obtengo flag" src="https://github.com/user-attachments/assets/73f5f30c-a020-408f-a103-54d5ec0d517c" />
+
+Hemos obtenido la bandera final.
+
+Flag de Root (root.txt): 4d9************************************** (Valor oculto por seguridad)
