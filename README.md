@@ -96,7 +96,7 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
 
 - 🧰 [**Automatizaciones n8n (Monorepo)**](https://github.com/EnriqueForte/automatizaciones-n8n)
   - 🧪 [**VirusTotal_IP_Checker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/VirusTotal_IP_Checker) → Webhook que analiza IPs en **VirusTotal**, resume indicadores (malicious/suspicious/harmless/undetected, reputación, ASN/país) y envía **alertas** (Telegram) + **registro** (Google Sheets). Incluye JSON sanitizado, docs y arquitectura.
-  - 🛡️ [**ip_reputation_tracker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/ip_reputation_tracker) → Automatización que obtiene IPs desde **Google Sheets**, consulta su reputación en **AbuseIPDB**, lanza **alertas por Telegram** si el `abuseConfidenceScore` supera un umbral, registra los resultados en **Sheets** y envía un **informe HTML diario** por **Gmail**. Incluye workflow sanitizado, documentación y carpeta de capturas.
+  - 🛡️ [**IP_Reputation_Tracker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/IP_Reputation_Tracker) → Automatización que obtiene IPs desde **Google Sheets**, consulta su reputación en **AbuseIPDB**, lanza **alertas por Telegram** si el `abuseConfidenceScore` supera un umbral, registra los resultados en **Sheets** y envía un **informe HTML diario** por **Gmail**. Incluye workflow sanitizado, documentación y carpeta de capturas.
 
 
 ---
