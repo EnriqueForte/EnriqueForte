@@ -101,7 +101,7 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
 
 ---
 
-## 🕵️ CTFs Resueltos (Writeups Terminados)
+## 🕵️ CTFs Resueltos
 
 Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y listos para consultar, agrupados por la **temática principal** que abordaron.
 
@@ -116,6 +116,8 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 | [📂 Include – TryHackMe](./CTFs/Include/README.md) | TryHackMe | ✅ |
 | [💉 Injectics – TryHackMe](./CTFs/Injectics/README.md) | TryHackMe | ✅ |
 | [🥒 Pickle Rick – TryHackMe](./CTFs/Pickle%20Rick/README.md) | TryHackMe | ✅ |
+| [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md) | TryHackMe | 🔜 |
+| [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md) | TryHackMe | 🔜 |
 
 ### 👑 Infraestructura y Active Directory
 
@@ -124,6 +126,8 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 | [🍲💻 Soupedecode01 – TryHackMe](./CTFs/Soupedecode01/README.md) | TryHackMe | ✅ |
 | [🏢🔐 Attacktive Directory – TryHackMe](./CTFs/AttacktiveDirectory/README.md) | TryHackMe | ✅ |
 | [🛠️💻 Toolsrus – TryHackMe](./CTFs/ToolsRus/README.md) | TryHackMe | ✅ |
+| [🔗 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md) | TryHackMe | 🔜 |
+| [🌀 Psycho – DockerLabs](./CTFs/Psycho/README.md) | DockerLabs | 🔜 |
 
 ### 🛡️ Escalamiento de Privilegios y Misceláneo
 
@@ -139,6 +143,8 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 | [🧩🔑 Crack The Hash – TryHackMe](./CTFs/CrackTheHash/README.md) | TryHackMe | ✅ |
 | [🧩 SimpleCTF – TryHackMe](./CTFs/SimpleCTF/README.md) | TryHackMe | ✅ |
 | [🏴‍☠️ El Bandito – TryHackMe](./CTFs/ElBandito/README.md) | TryHackMe | ✅ |
+| [🧭 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md) | TryHackMe | 🔜 |
+| [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md) | TryHackMe | 🔜 |
 
 ### 🔍 OSINT y Forense
 
@@ -146,22 +152,26 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 | :--- | :--- | :---: |
 | [🕵️‍♀️💻 Investigating Windows – TryHackMe](./CTFs/InvestigatingWindows/README.md) | TryHackMe | ✅ |
 | [🕵️ What's Your Name? – TryHackMe](./CTFs/Whats%20Your%20Name%3F/README.md) | TryHackMe | ✅ |
+| [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) | DockerLabs | 🔜 |
 
 ---
 
-## 🚧 CTFs en Preparación (Walkthrough Pendiente)
+### 🧩 Total General
 
-Estos writeups están actualmente **en proceso de creación o revisión**. Los iré moviendo a la sección superior una vez estén completos.
+| 📊 Tipo | 🧠 Cantidad |
+| :--- | :---: |
+| ✅ **CTFs completados y documentados** | **22** |
+| 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
+| 💯 **Total CTFs realizados** | **28** |
 
-### TryHackMe
+---
 
-- [🤖 Mr. Robot – TryHackMe](./CTFs/MrRobot/README.md)
-- [🌐 Basic Pentesting – TryHackMe](./CTFs/BasicPentesting/README.md)
-- [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md)
-- [🛡️ Vulnerability Capstone – TryHackMe](./CTFs/VulnerabilityCapstone/README.md)
-- [📂 RootMe – TryHackMe](./CTFs/RootMe/README.md)
-- [🔐 Net Sec Challenge – TryHackMe](./CTFs/NetSecChallenge/README.md)
+### 🎯 Resumen Visual
 
-### DockerLabs
-
-- [🌀 Psycho – DockerLabs](./CTFs/Psycho/README.md)
+```text
+🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (9/9)
+👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
+🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
+🔍 OSINT ............... 🟩🟩🟩            (3/3)
+````
+---
