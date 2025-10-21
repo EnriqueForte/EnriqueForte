@@ -42,30 +42,12 @@ nmap -sC -sV -A -Pn 10.10.11.87
 
 <img width="902" height="481" alt="Nmap tcp" src="https://github.com/user-attachments/assets/d96b3881-719a-4dad-a08f-441585743331" />
 
-
-El Paso 2: Escaneo con Nmap ya está listo.
-
-A continuación, está el contenido en formato Markdown. Por favor, copia el texto y añádelo a tu archivo expressway_writeup.md para continuar con el writeup.
-
-Markdown
-## Paso 2: Escaneo de Puertos con Nmap 🔎
-
-Una vez confirmada la conectividad, procedemos a identificar los servicios que se ejecutan en la máquina objetivo utilizando **Nmap**. Dada la pista de "Interstate 500" (UDP/500), realizamos escaneos TCP y UDP de forma específica.
-
-### 2.1. Escaneo de Puertos TCP
-
-Se realizó un escaneo TCP para identificar servicios comunes, versiones (`-sV`) y el sistema operativo (`-O`).
-
-### Comando Ejecutado
-
-```bash
-nmap -sC -sV -A -Pn 10.10.11.87
-````
 Resultados del Escaneo TCP
 ````
 Puerto	Estado	Servicio	Versión
 22/tcp	open	ssh	OpenSSH 10.0p2 Debian 8 (protocol 2.0)
 ````
+
 El único puerto TCP abierto es el 22 que aloja un servicio SSH. Aunque es una vía de acceso potencial, generalmente es el último recurso sin credenciales válidas.
 
 2.2. Escaneo de Puertos UDP y Script IKE
@@ -156,23 +138,7 @@ Primero, un escaneo simple confirma la existencia del servicio IKE.
 ```bash
 ike-scan 10.10.11.87
 ````
-Markdown
 
-## Paso 4: Extracción de Hash a través de IKE (UDP/4500) 🔑
-
-El archivo de configuración nos proporcionó una P**S**K (`secret-password`) y un ID de grupo (`rtr-remote`). Sin embargo, la máquina objetivo (10.10.11.87) probablemente espera credenciales de usuario para la autenticación en el modo IKE agresivo.
-
-Utilizaremos la herramienta `ike-scan` para forzar el modo agresivo y, crucialmente, para extraer un *hash* de autenticación que pueda ser descifrado *offline*.
-
-### 4.1. Uso de `ike-scan` en Modo Principal (Main Mode)
-
-Primero, un escaneo simple confirma la existencia del servicio IKE.
-
-### Comando Ejecutado (Main Mode)
-
-```bash
-ike-scan 10.10.11.87
-````
 Resultados
 
 El escaneo en Main Mode confirma la configuración de la política IKE (3DES, SHA1, Grupo 2) pero no revela información de autenticación.
@@ -331,10 +297,15 @@ void woot(void) {
 2. Ejecución del Exploit y Escalada de Privilegios
 
 El script se preparó y ejecutó para obtener la shell de root.
+
+<img width="1435" height="323" alt="ejecuto el exploit y obtengo permisos y flag root" src="https://github.com/user-attachments/assets/9b9f1aaa-458b-4fee-9b05-ae442929b788" />
+
 ````
 Acción,Comando,Detalle
-Habilitar Ejecución,chmod +x exploit.sh,"El intento inicial falló por ""Permission denied"", requiriendo permisos de ejecución."
-Ejecutar Exploit,./exploit.sh,La ejecución exitosa resultó en una shell con el usuario root.
+
+Habilitar Ejecución, chmod +x exploit.sh, "El intento inicial falló por ""Permission denied"", requiriendo permisos de ejecución."
+
+Ejecutar Exploit, ./exploit.sh, La ejecución exitosa resultó en una shell con el usuario root.
 ````
 
 ````
