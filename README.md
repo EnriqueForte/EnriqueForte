@@ -161,9 +161,9 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **22** |
+| ✅ **CTFs completados y documentados** | **23** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **28** |
+| 💯 **Total CTFs realizados** | **29** |
 
 ---
 
@@ -172,7 +172,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 ```text
 🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (9/9)
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
-🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
+🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (13/13)
 🔍 OSINT ............... 🟩🟩🟩            (3/3)
 ````
 ---
