@@ -105,10 +105,11 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
 
 Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y listos para consultar, agrupados por la **temática principal** que abordaron.
 
-### 🌐 Web Hacking y Servicios
+### 🌐 Web Hacking, Servicios y Escalada de Privilegios
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🐕🐈💻 Dogcat – TryHackMe](./CTFs/DogCat/README.md) | TryHackMe | ✅ |
 | [🛡️ RCE + SYSTEM - Relevant – TryHackMe ](./CTFs/Relevant/README.md) | TryHackMe | ✅ |
 | [🤖💾 Cyborg – TryHackMe ](./CTFs/Cyborg/README.md) | TryHackMe | ✅ |
 | [🔑💻 Overpass – TryHackMe](./CTFs/OverPass/README.md) | TryHackMe | ✅ |
@@ -161,18 +162,18 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **23** |
+| ✅ **CTFs completados y documentados** | **24** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **29** |
+| 💯 **Total CTFs realizados** | **30** |
 
 ---
 
 ### 🎯 Resumen Visual
 
 ```text
-🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (9/9)
+🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (10/10)
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
-🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (13/13)
+🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
 🔍 OSINT ............... 🟩🟩🟩            (3/3)
 ````
 ---
