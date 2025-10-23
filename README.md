@@ -135,6 +135,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🧩🔐 Smol - TryHackMe](./CTFs/Smol/README.md) | TryHackMe | ✅ |
 | [🔒 Expressway - HackTheBox](./CTFs/Expressway/README.md) | HackTheBox | ✅ |
 | [🖥️ Anonymous – TryHackMe](./CTFs/Anonymous/README.md) | TryHackMe | ✅ |
 | [🖼️🕵️ Brooklyn Nine Nine – TryHackMe ](./CTFs/BrooklynNineNine/README.md) | TryHackMe | ✅ |
@@ -164,9 +165,9 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **26** |
+| ✅ **CTFs completados y documentados** | **27** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **32** |
+| 💯 **Total CTFs realizados** | **33** |
 
 ---
 
@@ -175,7 +176,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 ```text
 🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (11/11)
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
-🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
+🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (13/13)
 🔍 OSINT ............... 🟩🟩🟩            (4/4)
 ````
 ---
