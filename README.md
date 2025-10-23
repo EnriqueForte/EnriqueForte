@@ -153,6 +153,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🕵️‍♂️💾 Autopsy & Disk Analysis: Caso Forense TryHackMe](./CTFs/DiskAnalysisAndAutopsy/README.md) | TryHackMe | ✅ |
 | [🕵️‍♀️💻 Investigating Windows – TryHackMe](./CTFs/InvestigatingWindows/README.md) | TryHackMe | ✅ |
 | [🕵️ What's Your Name? – TryHackMe](./CTFs/Whats%20Your%20Name%3F/README.md) | TryHackMe | ✅ |
 | [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) | DockerLabs | 🔜 |
@@ -163,9 +164,9 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **25** |
+| ✅ **CTFs completados y documentados** | **26** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **31** |
+| 💯 **Total CTFs realizados** | **32** |
 
 ---
 
@@ -175,6 +176,6 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (11/11)
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
 🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
-🔍 OSINT ............... 🟩🟩🟩            (3/3)
+🔍 OSINT ............... 🟩🟩🟩            (4/4)
 ````
 ---
