@@ -1,4 +1,4 @@
-# 💻 Escribiendo el Writeup para el CTF: Smol (TryHackMe)
+# 💻 Writeup para el CTF: Smol (TryHackMe)
 
 ## Introducción
 
