@@ -161,24 +161,31 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 | [🕵️ What's Your Name? – TryHackMe](./CTFs/Whats%20Your%20Name%3F/README.md) | TryHackMe | ✅ |
 | [🕵️ OhSINT – TryHackMe](./CTFs/OhSINT/README.md) | DockerLabs | 🔜 |
 
+### 💥 Buffer Overflow y Explotación de Memoria
+
+| CTF | Plataforma | Estado |
+| :--- | :--- | :---: |
+| [🧠💥 Flag Vault - TryHackMe](./CTFs/FlagVault/README.md) | TryHackMe | ✅ |
+
 ---
 
 ### 🧩 Total General
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **29** |
+| ✅ **CTFs completados y documentados** | **30** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **35** |
+| 💯 **Total CTFs realizados** | **36** |
 
 ---
 
 ### 🎯 Resumen Visual
 
 ```text
-🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (11/11)
-👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
-🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (15/15)
-🔍 OSINT ............... 🟩🟩🟩            (4/4)
+🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (11/11)
+👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
+🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (15/15)
+🔍 OSINT ............... 🟩🟩🟩            (4/4)
+💥 Buffer Overflow ..... 🟩 (1/1)
 ````
 ---
