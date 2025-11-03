@@ -165,6 +165,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🧠💥 Flag Vault 2 - TryHackMe](./CTFs/FlagVault2/README.md) | TryHackMe | ✅ |
 | [🧠💥 Flag Vault - TryHackMe](./CTFs/FlagVault/README.md) | TryHackMe | ✅ |
 
 ---
@@ -173,9 +174,9 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **30** |
+| ✅ **CTFs completados y documentados** | **31** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **36** |
+| 💯 **Total CTFs realizados** | **37** |
 
 ---
 
@@ -186,6 +187,6 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
 🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (15/15)
 🔍 OSINT ............... 🟩🟩🟩            (4/4)
-💥 Buffer Overflow ..... 🟩 (1/1)
+💥 Buffer Overflow ..... 🟩 (2/2)
 ````
 ---
