@@ -9,7 +9,7 @@
 
 ## 🚀 Sobre mí
 - 🌍 Desde Zaragoza, España.  
-- 🎓 En proceso de especialización como **Consultor en Ciberseguridad**.
+- 🎓 En proceso de especialización como **Analista en Ciberseguridad**.
 - 🛡️ Experiencia práctica con **TryHackMe** → rutas, máquinas y retos de pentesting.  
 - 📈 Interesado en crecer en áreas de **Red Team, Blue Team y Seguridad Ofensiva/Defensiva**.  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/enriqueforte/)
