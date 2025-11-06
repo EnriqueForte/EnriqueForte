@@ -125,6 +125,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🛡️🔥 VulNet:Roasted – TryHackMe](./CTFs/VulNet/README.md) | TryHackMe | ✅ |
 | [🍲💻 Soupedecode01 – TryHackMe](./CTFs/Soupedecode01/README.md) | TryHackMe | ✅ |
 | [🏢🔐 Attacktive Directory – TryHackMe](./CTFs/AttacktiveDirectory/README.md) | TryHackMe | ✅ |
 | [🛠️💻 Toolsrus – TryHackMe](./CTFs/ToolsRus/README.md) | TryHackMe | ✅ |
@@ -174,9 +175,9 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **31** |
+| ✅ **CTFs completados y documentados** | **32** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **37** |
+| 💯 **Total CTFs realizados** | **38** |
 
 ---
 
@@ -184,7 +185,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 ```text
 🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (11/11)
-👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (5/5)
+👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (6/6)
 🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (15/15)
 🔍 OSINT ............... 🟩🟩🟩            (4/4)
 💥 Buffer Overflow ..... 🟩 (2/2)
