@@ -19,39 +19,48 @@
 
 ## 🛠️ Tecnologías y herramientas
 <p align="left">
-  
+
   <!-- Sistemas -->
   <img src="https://img.shields.io/badge/Linux-333?logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?logo=kalilinux&logoColor=white" />
   <img src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white" />
-  
-  <!-- Pentesting -->
-  <img src="https://img.shields.io/badge/TryHackMe-212121?logo=tryhackme&logoColor=red" />
-  <img src="https://img.shields.io/badge/HackTheBox-9FEF00?logo=hackthebox&logoColor=black" />
+
+  <!-- QA Automation -->
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white" />
+  <img src="https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=white" />
+  <img src="https://img.shields.io/badge/PyTest-0A9EDC?logo=pytest&logoColor=white" />
+
+  <!-- Pentesting / Security Testing -->
+  <img src="https://img.shields.io/badge/OWASP%20ZAP-003B57?logo=owasp&logoColor=white" />
   <img src="https://img.shields.io/badge/Burp%20Suite-FF6F00?logo=burpsuite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Metasploit-3A6EA5?logo=metasploit&logoColor=white" />
   <img src="https://img.shields.io/badge/Nmap-00457C?logo=nmap&logoColor=white" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Hydra-3A6EA5" />
 
   <!-- Desarrollo -->
+  <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />  
   <img src="https://img.shields.io/badge/SQL-003B57?logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/SQLite-07405E?logo=sqlite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-007396?logo=java&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
 
-  <!-- DevOps -->
+  <!-- DevOps / CI -->
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerShell-2CA5E0?logo=powershell&logoColor=white" />
 
- <!-- Automatizacion -->
- <img src="https://img.shields.io/badge/n8n-FF6699?logo=n8n&logoColor=white" />
+  <!-- Reporting / Dashboards -->
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=white" />
+
+  <!-- Automatización -->
+  <img src="https://img.shields.io/badge/n8n-FF6699?logo=n8n&logoColor=white" />
 </p>
-
 
 ---
 
@@ -71,7 +80,6 @@
 <p align="center">
   <img src="https://github-readme-streak-stats-eight.vercel.app?user=EnriqueForte&theme=radical" height="150" />
 </p>
-
 
 ---
 
@@ -98,7 +106,9 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
   - 🧪 [**VirusTotal_IP_Checker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/VirusTotal_IP_Checker) → Webhook que analiza IPs en **VirusTotal**, resume indicadores (malicious/suspicious/harmless/undetected, reputación, ASN/país) y envía **alertas** (Telegram) + **registro** (Google Sheets). Incluye JSON sanitizado, docs y arquitectura.
   - 🛡️ [**IP_Reputation_Tracker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/IP_Reputation_Tracker) → Automatización que obtiene IPs desde **Google Sheets**, consulta su reputación en **AbuseIPDB**, lanza **alertas por Telegram** si el `abuseConfidenceScore` supera un umbral, registra los resultados en **Sheets** y envía un **informe HTML diario** por **Gmail**. Incluye workflow sanitizado, documentación y carpeta de capturas.
 
-
+- 🤖 [**QA-Automation-Ciberseguridad (Monorepo)**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad)
+  - 🧠 [**Playwright Security Lab**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad/tree/main/Playwright_Security_Lab) → Laboratorio automatizado con **Playwright** que compara entornos *Secure* vs *Insecure*, validando encabezados de seguridad (CSP, HSTS, X-Frame-Options), HTTPS, y buenas prácticas OWASP. Genera **reportes automáticos**, análisis comparativo y logs detallados de vulnerabilidades detectadas.  
+  
 ---
 
 ## 🕵️ CTFs Resueltos
