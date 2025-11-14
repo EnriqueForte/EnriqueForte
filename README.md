@@ -119,6 +119,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [💼💻 Billing – TryHackMe](./CTFs/Billing/README.md) | TryHackMe | ✅ |
 | [🔬🖥️ UltraTech – TryHackMe](./CTFs/UltraTech/README.md) | TryHackMe | ✅ |
 | [💻📚 Blog – TryHackMe](./CTFs/Blog/README.md) | TryHackMe | ✅ |
 | [🐕🐈💻 Dogcat – TryHackMe](./CTFs/DogCat/README.md) | TryHackMe | ✅ |
@@ -186,16 +187,16 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | 📊 Tipo | 🧠 Cantidad |
 | :--- | :---: |
-| ✅ **CTFs completados y documentados** | **33** |
+| ✅ **CTFs completados y documentados** | **34** |
 | 🔜 **CTFs completados (walkthrough pendiente)** | **6** |
-| 💯 **Total CTFs realizados** | **39** |
+| 💯 **Total CTFs realizados** | **40** |
 
 ---
 
 ### 🎯 Resumen Visual
 
 ```text
-🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (12/12)
+🌐 Web ................. 🟩🟩🟩🟩🟩🟩🟩🟩🟩  (13/13)
 👑 Infraestructura ..... 🟩🟩🟩🟩🟩       (6/6)
 🛡️ Privilegios ......... 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  (15/15)
 🔍 OSINT ............... 🟩🟩🟩            (4/4)
