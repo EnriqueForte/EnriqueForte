@@ -149,6 +149,7 @@ Aquí encontrarás los writeups de CTFs completamente resueltos, revisados y lis
 
 | CTF | Plataforma | Estado |
 | :--- | :--- | :---: |
+| [🐧📥 Wgel CTF – TryHackMe](./CTFs/WgelCTF/README.md) | TryHackMe | ✅ |
 | [🧨💥 Brute It – TryHackMe](./CTFs/BruteIt/README.md) | TryHackMe | ✅ |
 | [🦇👻 TomGhost – TryHackMe](./CTFs/TomGhost/README.md) | TryHackMe | ✅ |
 | [🎛️🔑 Kenobi - TryHackMe](./CTFs/Kenobi/README.md) | TryHackMe | ✅ |
