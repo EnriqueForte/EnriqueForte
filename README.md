@@ -2,9 +2,9 @@
 
 # 👋 ¡Hola! Soy Enrique Forte  
 
-💻 **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma** 
+💻 **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma**  
 
-🔐 **Master Consultor en Ciberseguridad | Pentesting | Analista en Ciberseguridad | Alumno en HACK4U
+🔐 **Máster Consultor en Ciberseguridad | Pentesting | Analista en Ciberseguridad | Alumno en HACK4U**
 
 ---
 
