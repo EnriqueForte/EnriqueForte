@@ -91,7 +91,7 @@
 
 ---
 
-## 🔧 Herramientas para Ciberseguridad
+## 🔧 Herramientas y Laboratorios de Ciberseguridad
 
 Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
 
