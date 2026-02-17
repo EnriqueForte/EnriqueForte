@@ -72,14 +72,10 @@
 
 ---
 
-## 📊 Estadísticas de GitHub
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=EnriqueForte&show_icons=true&theme=radical" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EnriqueForte&layout=compact&theme=radical" height="150" />
-</p>
+## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats-eight.vercel.app?user=EnriqueForte&theme=radical" height="150" />
+  <img src="https://streak-stats.demolab.com?user=EnriqueForte&theme=radical" height="150" />
 </p>
 
 ---
@@ -108,8 +104,11 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
   - 🛡️ [**IP_Reputation_Tracker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/IP_Reputation_Tracker) → Automatización que obtiene IPs desde **Google Sheets**, consulta su reputación en **AbuseIPDB**, lanza **alertas por Telegram** si el `abuseConfidenceScore` supera un umbral, registra los resultados en **Sheets** y envía un **informe HTML diario** por **Gmail**. Incluye workflow sanitizado, documentación y carpeta de capturas.
 
 - 🤖 [**QA-Automation-Ciberseguridad (Monorepo)**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad)
-  - 🧠 [**Playwright Security Lab**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad/tree/main/Playwright_Security_Lab) → Laboratorio automatizado con **Playwright** que compara entornos *Secure* vs *Insecure*, validando encabezados de seguridad (CSP, HSTS, X-Frame-Options), HTTPS, y buenas prácticas OWASP. Genera **reportes automáticos**, análisis comparativo y logs detallados de vulnerabilidades detectadas.  
-  
+  - 🧠 [**Playwright Security Lab**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad/tree/main/Playwright_Security_Lab) → Laboratorio automatizado con **Playwright** que compara entornos *Secure* vs *Insecure*, validando encabezados de seguridad (CSP, HSTS, X-Frame-Options), HTTPS, y buenas prácticas OWASP. Genera **reportes automáticos**, análisis comparativo y logs detallados de vulnerabilidades detectadas.
+ 
+- 🧪 [**RedTeamLab SQLi (Local Web Lab)**](https://github.com/EnriqueForte/redteamlab-sqli)
+  - 🔓 [**SQL Injection Lab (Login Bypass + UNION Dump)**](https://github.com/EnriqueForte/redteamlab-sqli/tree/main/lab) → Laboratorio **educativo y local** en **PHP + MariaDB** para practicar SQLi de forma manual: **Authentication Bypass** en `login.php` y explotación **Boolean-based + UNION-based + GROUP_CONCAT** en `searchUsers`. Incluye **capturas**, endpoint indexado y roadmap para versión *Secure* con *prepared statements*.
+
 ---
 
 ## 🕵️ CTFs Resueltos
