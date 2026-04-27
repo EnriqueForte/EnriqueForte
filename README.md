@@ -76,6 +76,7 @@
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=EnriqueForte&theme=radical" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api/productivity-graph?username=EnriqueForte&theme=radical&line=007bff&point=ffffff" height="150" />
 </p>
 
 ---
