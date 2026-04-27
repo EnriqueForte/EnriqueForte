@@ -79,7 +79,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true&width=800&height=300&days=365" width="100%" />
+  <img src="https://metrics.lecoq.io/EnriqueForte?base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.activity=false&base.community=false&base.metadata=false&base.repositories=false&isocalendar=1&isocalendar.duration=full-year&config.timezone=Europe%2FMadrid&theme=tokyonight" width="100%" />
 </p>
 
 ## 🎯 Logros y proyectos
