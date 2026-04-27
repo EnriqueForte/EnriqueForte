@@ -75,9 +75,12 @@
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=radical&area=true&hide_border=true&width=800" width="100%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=EnriqueForte&layout=compact&theme=radical" height="150" />
 </p>
----
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=radical&area=true&hide_border=true&custom_title=Contribuciones%20por%20Mes&height=300" width="100%" />
+</p>
 
 ## 🎯 Logros y proyectos
 - ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
