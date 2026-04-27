@@ -97,6 +97,8 @@
 
 Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
 
+- 🛡️ [**Web Defense AI System**](https://github.com/EnriqueForte/web-defense-ai) → Sistema de **ciberseguridad defensiva** con Agentes de IA que analiza logs de Apache en tiempo real, detecta ataques (SQLi, XSS, Path Traversal) y genera reportes ejecutivos automáticos. Stack: Python · CrewAI · LLaMA 4 · Flask · Docker.
+
 - 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos en **Python** con escaneo básico, rangos de puertos y exportación de resultados. Incluye banner en HTML/CSS.
 
 - 🔐 [**WiFi Guardian (Wi-Fi Scanner)**](https://github.com/EnriqueForte/wifi-guardian) → Vigilancia de red local con escaneo ARP/ICMP, baseline de dispositivos, alias y fabricantes (OUI), detección de ARP spoofing y deauth (Linux). Informe HTML con tema oscuro y buscador. CLI en Python/Typer.
