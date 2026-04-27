@@ -75,7 +75,8 @@
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/productivity-graph?username=EnriqueForte&theme=radical&line=007bff&point=ffffff" height="150" />
+  <img src="https://streak-stats.demolab.com?user=EnriqueForte&theme=radical" height="150" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=react-dark&bg_color=1a1b27&hide_border=true" height="150" />
 </p>
 
 ---
