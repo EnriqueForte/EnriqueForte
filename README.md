@@ -75,10 +75,8 @@
 ## 📊 GitHub Activity
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=EnriqueForte&theme=radical" height="150" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=react-dark&bg_color=1a1b27&hide_border=true" height="150" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=radical&area=true&hide_border=true&width=800" width="100%" />
 </p>
-
 ---
 
 ## 🎯 Logros y proyectos
