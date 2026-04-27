@@ -79,7 +79,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&theme=radical&area=true&hide_border=true&custom_title=Contribuciones%20por%20Mes&height=300" width="100%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true&width=800&height=300" width="100%" />
 </p>
 
 ## 🎯 Logros y proyectos
