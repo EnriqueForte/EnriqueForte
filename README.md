@@ -1,6 +1,6 @@
 <img src="ciberseguridad.jpg" alt="Mi foto de perfil">
 
-# 👋 ¡Hola! Soy Enrique Forte  
+# 👋 ¡Hola! Soy Enrique Forte (Aka.T3r0s3c)
 
 💻 **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma**  
 
