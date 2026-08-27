@@ -78,14 +78,9 @@
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=EnriqueForte&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true&width=800&height=300" width="100%" />
 </p>
 
+---
+
 ## 🎯 Logros y proyectos
-- ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
-- ✅ Desarrollo de aplicaciones como:
-  - ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
-  - 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app) 
-  - 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
-  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/emisiones-co2)
-  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte/url-shortener)
 
 ---
 
@@ -108,6 +103,16 @@ Aquí encontrarás algunos proyectos y recursos que he creado para aprender y pr
  
 - 🧪 [**RedTeamLab SQLi (Local Web Lab)**](https://github.com/EnriqueForte/redteamlab-sqli)
   - 🔓 [**SQL Injection Lab (Login Bypass + UNION Dump)**](https://github.com/EnriqueForte/redteamlab-sqli/tree/main/lab) → Laboratorio **educativo y local** en **PHP + MariaDB** para practicar SQLi de forma manual: **Authentication Bypass** en `login.php` y explotación **Boolean-based + UNION-based + GROUP_CONCAT** en `searchUsers`. Incluye **capturas**, endpoint indexado y roadmap para versión *Secure* con *prepared statements*.
+
+---
+
+- ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
+- ✅ Desarrollo de aplicaciones como:
+  - ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
+  - 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app) 
+  - 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
+  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/emisiones-co2)
+  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte/url-shortener)
 
 ---
 
