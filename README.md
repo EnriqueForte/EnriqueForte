@@ -2,72 +2,82 @@
 
 # 👋 ¡Hola! Soy Enrique Forte aka. @t3r0s3c
 
-💻 **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma**  
+💻 **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma**
 
-🔐 **Máster Consultor en Ciberseguridad | Pentesting | Analista en Ciberseguridad | Alumno en HACK4U**
+🔐 **Máster Consultor en Ciberseguridad | Analista en Ciberseguridad | AI Security | LLM Security**
 
 ---
 
 ## 🚀 Sobre mí
-- 🌍 Desde Zaragoza, España.  
-- 🎓 En proceso de especialización como **Analista en Ciberseguridad**.
-- 🛡️ Experiencia práctica con **TryHackMe** → rutas, máquinas y retos de pentesting.  
-- 📈 Interesado en crecer en áreas de **Red Team, Blue Team y Seguridad Ofensiva/Defensiva**.  
+
+Perfil técnico especializado en ciberseguridad y desarrollo de software, actualmente orientando mi carrera y profesión hacia **AI Security, LLM Security, AI Red Teaming y seguridad de agentes de IA**.
+
+Mi perfil combina conocimientos de **desarrollo, seguridad ofensiva, OSINT, Python y automatización**, con un enfoque práctico basado en la creación de proyectos, laboratorios y herramientas propias.
+
+🧠 Actualmente estoy profundizando en la seguridad de sistemas basados en **LLMs y agentes autónomos**, investigando cómo pueden ser **atacados, analizados y protegidos**.
+
+Entre mis principales áreas de interés se encuentran:
+
+- 🤖 **AI Security & LLM Security**
+- 🧪 **AI Red Teaming**
+- 🧠 **Agent Security / Agentic AI**
+- 💉 **Prompt Injection**
+- 📚 **RAG Security**
+- 🔌 **MCP Security**
+- 🌐 **Web & Application Security**
+- 🔎 **OSINT y Reconocimiento**
+- ⚙️ **Automatización de seguridad con Python y n8n**
+
+Mi objetivo es seguir desarrollándome profesionalmente en la combinación entre **Ciberseguridad e Inteligencia Artificial**, construyendo herramientas y laboratorios que me permitan investigar y comprender las nuevas superficies de ataque que están surgiendo alrededor de los sistemas de IA.
+
+---
+
+## 🔗 Enlaces
+
 - 🔗 [LinkedIn](https://www.linkedin.com/in/enriqueforte/)
 - 🔗 [Portfolio — Enrique Forte](https://enriqueforte.web.app)
 
----
-
 ## 🛠️ Tecnologías y herramientas
+
 <p align="left">
 
-  <!-- Sistemas -->
-  <img src="https://img.shields.io/badge/Linux-333?logo=linux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%20Security-000?logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/LLM%20Security-000?logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%20Red%20Teaming-000?logo=hackthebox&logoColor=white" />
+  <img src="https://img.shields.io/badge/AI%20Agents-000?logo=probot&logoColor=white" />
+  <img src="https://img.shields.io/badge/RAG-000?logo=databricks&logoColor=white" />
+</p>
 
-  <!-- QA Automation -->
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white" />
-  <img src="https://img.shields.io/badge/Selenium-43B02A?logo=selenium&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTest-0A9EDC?logo=pytest&logoColor=white" />
+### 🐍 Desarrollo
 
-  <!-- Pentesting / Security Testing -->
-  <img src="https://img.shields.io/badge/OWASP%20ZAP-003B57?logo=owasp&logoColor=white" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/SQL-003B57?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white" />
+</p>
+
+### 🛡️ Cybersecurity
+
+<p align="left">
   <img src="https://img.shields.io/badge/Burp%20Suite-FF6F00?logo=burpsuite&logoColor=white" />
   <img src="https://img.shields.io/badge/Nmap-00457C?logo=nmap&logoColor=white" />
   <img src="https://img.shields.io/badge/Wireshark-1679A7?logo=wireshark&logoColor=white" />
-  <img src="https://img.shields.io/badge/Hydra-3A6EA5" />
-
-  <!-- Desarrollo -->
-  <img src="https://img.shields.io/badge/Java-007396?logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />  
-  <img src="https://img.shields.io/badge/SQL-003B57?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLite-07405E?logo=sqlite&logoColor=white" />
-
-  <!-- DevOps / CI -->
-  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?logo=gnubash&logoColor=white" />
-  <img src="https://img.shields.io/badge/PowerShell-2CA5E0?logo=powershell&logoColor=white" />
-
-  <!-- Reporting / Dashboards -->
-  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/JSON-000?logo=json&logoColor=white" />
-
-  <!-- Automatización -->
-  <img src="https://img.shields.io/badge/n8n-FF6699?logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/OWASP%20ZAP-003B57?logo=owasp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali%20Linux-268BEE?logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-333?logo=linux&logoColor=white" />
 </p>
 
----
+### ⚙️ Automatización & DevOps
 
-### 🛡️ Mis estadísticas en TryHackMe
-<p align="center">
-    <img src="./whoisKiK3.png" alt="TryHackMe Badge" />
+<p align="left">
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/n8n-FF6699?logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white" />
+  <img src="https://img.shields.io/badge/PowerShell-2CA5E0?logo=powershell&logoColor=white" />
 </p>
 
 ---
@@ -90,33 +100,47 @@
 
 ## 🔧 Herramientas y Laboratorios de Ciberseguridad
 
-Aquí encontrarás algunos proyectos y recursos que he creado para aprender y practicar:
+Proyectos y laboratorios desarrollados para aplicar de forma práctica conocimientos de **ciberseguridad, automatización, desarrollo seguro e Inteligencia Artificial**.
 
-- 🛡️ [**Web Defense AI System**](https://github.com/EnriqueForte/web-defense-ai) → Sistema de **ciberseguridad defensiva** con Agentes de IA que analiza logs de Apache en tiempo real, detecta ataques (SQLi, XSS, Path Traversal) y genera reportes ejecutivos automáticos. Stack: Python · CrewAI · LLaMA 4 · Flask · Docker.
+### 🤖 AI Security & Ciberseguridad
 
-- 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3) → Escáner de puertos en **Python** con escaneo básico, rangos de puertos y exportación de resultados. Incluye banner en HTML/CSS.
+- 🛡️ [**Web Defense AI System**](https://github.com/EnriqueForte/web-defense-ai)  
+  Sistema de **ciberseguridad defensiva basado en Agentes de IA** que analiza logs de Apache en tiempo real, detecta ataques como SQL Injection, XSS y Path Traversal y genera informes de seguridad automatizados.  
+  **Stack:** Python · CrewAI · LLaMA · Flask · Docker
 
-- 🔐 [**WiFi Guardian (Wi-Fi Scanner)**](https://github.com/EnriqueForte/wifi-guardian) → Vigilancia de red local con escaneo ARP/ICMP, baseline de dispositivos, alias y fabricantes (OUI), detección de ARP spoofing y deauth (Linux). Informe HTML con tema oscuro y buscador. CLI en Python/Typer.
+### 🛡️ Seguridad Ofensiva, Red y Automatización
 
-- 🧰 [**Automatizaciones n8n (Monorepo)**](https://github.com/EnriqueForte/automatizaciones-n8n)
-  - 🧪 [**VirusTotal_IP_Checker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/VirusTotal_IP_Checker) → Webhook que analiza IPs en **VirusTotal**, resume indicadores (malicious/suspicious/harmless/undetected, reputación, ASN/país) y envía **alertas** (Telegram) + **registro** (Google Sheets). Incluye JSON sanitizado, docs y arquitectura.
-  - 🛡️ [**IP_Reputation_Tracker**](https://github.com/EnriqueForte/automatizaciones-n8n/tree/main/IP_Reputation_Tracker) → Automatización que obtiene IPs desde **Google Sheets**, consulta su reputación en **AbuseIPDB**, lanza **alertas por Telegram** si el `abuseConfidenceScore` supera un umbral, registra los resultados en **Sheets** y envía un **informe HTML diario** por **Gmail**. Incluye workflow sanitizado, documentación y carpeta de capturas.
+- 🛰️ [**Port Scanner en Python**](https://github.com/EnriqueForte/port-scanner-kik3)  
+  Herramienta de reconocimiento desarrollada en **Python** para escaneo de puertos, rangos de puertos y exportación de resultados. Incluye generación de un informe web en HTML/CSS.
 
-- 🤖 [**QA-Automation-Ciberseguridad (Monorepo)**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad)
-  - 🧠 [**Playwright Security Lab**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad/tree/main/Playwright_Security_Lab) → Laboratorio automatizado con **Playwright** que compara entornos *Secure* vs *Insecure*, validando encabezados de seguridad (CSP, HSTS, X-Frame-Options), HTTPS, y buenas prácticas OWASP. Genera **reportes automáticos**, análisis comparativo y logs detallados de vulnerabilidades detectadas.
- 
-- 🧪 [**RedTeamLab SQLi (Local Web Lab)**](https://github.com/EnriqueForte/redteamlab-sqli)
-  - 🔓 [**SQL Injection Lab (Login Bypass + UNION Dump)**](https://github.com/EnriqueForte/redteamlab-sqli/tree/main/lab) → Laboratorio **educativo y local** en **PHP + MariaDB** para practicar SQLi de forma manual: **Authentication Bypass** en `login.php` y explotación **Boolean-based + UNION-based + GROUP_CONCAT** en `searchUsers`. Incluye **capturas**, endpoint indexado y roadmap para versión *Secure* con *prepared statements*.
+- 🔐 [**WiFi Guardian**](https://github.com/EnriqueForte/wifi-guardian)  
+  Herramienta de monitorización de red local mediante **ARP/ICMP**, baseline de dispositivos, identificación de fabricantes mediante OUI y detección de anomalías como **ARP Spoofing** y Deauthentication.  
+  **Stack:** Python · Typer · Linux
+
+- 🧪 [**RedTeamLab SQLi**](https://github.com/EnriqueForte/redteamlab-sqli)  
+  Laboratorio web **local y educativo** desarrollado con PHP + MariaDB para practicar técnicas de **SQL Injection** de forma controlada, incluyendo Authentication Bypass, Boolean-based y UNION-based SQLi. Incluye roadmap para implementar posteriormente una versión segura con prepared statements.
+
+### ⚙️ Automatización y Security Testing
+
+- 🧰 [**Automatizaciones n8n**](https://github.com/EnriqueForte/automatizaciones-n8n)  
+  Colección de automatizaciones orientadas a **ciberseguridad y threat intelligence**:
+  - 🧪 **VirusTotal IP Checker** → análisis de reputación de IPs, alertas mediante Telegram y registro en Google Sheets.
+  - 🛡️ **IP Reputation Tracker** → consulta de reputación mediante AbuseIPDB, alertas automáticas, registro de resultados e informes diarios.
+
+- 🧠 [**QA-Automation-Ciberseguridad**](https://github.com/EnriqueForte/QA-Automation-Ciberseguridad)  
+  Laboratorio de **security testing automatizado** con Playwright para comparar entornos Secure vs Insecure, verificando HTTPS y diferentes encabezados de seguridad como CSP, HSTS y X-Frame-Options.
 
 ---
 
-- ✅ Proyectos en **Java y SQL** disponibles en mis repositorios.  
-- ✅ Desarrollo de aplicaciones como:
-  - ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
-  - 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app) 
-  - 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
-  - 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/emisiones-co2)
-  - 🔗 [**URL Shortener**](https://github.com/EnriqueForte/url-shortener)
+## 💻 Proyectos de Desarrollo de Software
+
+Además de mis proyectos de ciberseguridad, cuento con experiencia en desarrollo de aplicaciones y servicios utilizando **Java, Python, JavaScript y SQL**.
+
+- ✈️ [**Gestión de Vuelos y Pasajeros**](https://github.com/EnriqueForte/GestionVuelosyPasajeros)
+- 🌦️ [**Aplicación Meteorológica**](https://github.com/EnriqueForte/weather-app)
+- 🛠️ [**Servicio de revisión de código**](https://github.com/EnriqueForte/code-review-service)
+- 🌍 [**Emisiones CO₂**](https://github.com/EnriqueForte/emisiones-co2)
+- 🔗 [**URL Shortener**](https://github.com/EnriqueForte/url-shortener)
 
 ---
 
