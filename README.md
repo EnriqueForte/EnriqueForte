@@ -1,4 +1,4 @@
-<img src="ciberseguridad.jpg" alt="Mi foto de perfil">
+<img src="ciberseguridad.png" alt="Mi foto de perfil">
 
 # 👋 ¡Hola! Soy Enrique Forte aka. @t3r0s3c
 
