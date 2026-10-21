@@ -104,6 +104,10 @@ Proyectos y laboratorios desarrollados para aplicar de forma práctica conocimie
 
 ### 🤖 AI Security & Ciberseguridad
 
+- 🛡️ [**Web Defense AI V2**](https://github.com/EnriqueForte/web-defense-ai-v2)  
+  Evolución de Web Defense AI con una **consola SOC local** para analizar logs de Apache mediante **tres agentes de IA**, revisar indicadores de SQL Injection, XSS, Path Traversal y fuerza bruta, y consultar **informes estructurados con evidencias trazables**. Incorpora API versionada, gestión de análisis y un laboratorio DVWA aislado.  
+  **Stack:** Python · CrewAI · Next.js · React · TypeScript · Flask · Docker · Groq / OpenRouter
+
 - 🛡️ [**Web Defense AI System**](https://github.com/EnriqueForte/web-defense-ai)  
   Sistema de **ciberseguridad defensiva basado en Agentes de IA** que analiza logs de Apache en tiempo real, detecta ataques como SQL Injection, XSS y Path Traversal y genera informes de seguridad automatizados.  
   **Stack:** Python · CrewAI · LLaMA · Flask · Docker
