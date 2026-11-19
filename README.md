@@ -104,6 +104,10 @@ Proyectos y laboratorios desarrollados para aplicar de forma práctica conocimie
 
 ### 🤖 AI Security & Ciberseguridad
 
+- 🔎 [**MetaTracer**](https://github.com/EnriqueForte/MetaTracer)  
+  Herramienta de **reconocimiento y OSINT** que descubre metadatos sensibles en recursos públicos dentro de un alcance autorizado. Incluye detección determinista, interpretación opcional de hallazgos con LLM, interfaz web, CLI y exportación de informes.  
+  **Stack:** Python · FastAPI · Next.js · React · TypeScript · LangGraph · SQLite / PostgreSQL · Docker
+
 - 🛡️ [**Web Defense AI V2**](https://github.com/EnriqueForte/web-defense-ai-v2)  
   Evolución de la primera versión con una **migración de la interfaz Flask a TypeScript, React y Next.js**, y un rediseño con **Tailwind CSS** para mejorar la navegación, la visualización de indicadores y la consulta de informes. El backend conserva **Python, Flask y CrewAI**, con API versionada y validación de resultados para reforzar la coherencia entre el análisis y el dashboard. Analiza logs de Apache mediante tres agentes de IA y genera **informes estructurados con evidencias trazables**.  
   **Stack:** Python · TypeScript · CrewAI · Next.js · React · Tailwind CSS · Flask · Docker · Groq / OpenRouter
